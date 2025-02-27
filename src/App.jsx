@@ -1,5 +1,13 @@
+import Menu from "./components/Menu";
+import Header from "./components/Header";
+
 const App = () => {
-  return <div>App</div>;
+  return (
+    <>
+      <Menu />
+      <Header />
+    </>
+  );
 };
 
 export default App;

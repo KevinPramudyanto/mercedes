@@ -7,3 +7,31 @@
 body {
   @apply font-inter;
 }
+
+.masthead-ring {
+  animation: spin 3s linear 1;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 100;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.masthead-ring-rotate {
+  animation: spin 1s linear 3;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    opacity: 100;
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}

@@ -12,7 +12,7 @@ export default {
         darkbrown: "#5F4112",
         lightbrown: "#695E3E",
         lightgray: "#656F80",
-        darkgray: "262A31",
+        darkgray: "#262A31",
       },
     },
   },
