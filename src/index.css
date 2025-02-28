@@ -58,3 +58,29 @@ body {
     transform: translateX(1000px) rotate(0deg);
   }
 }
+
+.grow-in {
+  transform: scale(1);
+  animation: growIn 1s linear;
+}
+@keyframes growIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.grow-out {
+  transform: scale(0);
+  animation: growOut 1s linear;
+}
+@keyframes growOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}

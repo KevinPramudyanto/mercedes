@@ -77,47 +77,48 @@ const Introduction = () => {
         </p>
       </div>
 
-      <div
-        className={
-          isTop
-            ? isBottom
-              ? "carousel-roll-right-out"
-              : "carousel-roll-left-in"
-            : "carousel-roll-left-out"
-        }
-      >
-        <div className="flex items-center justify-center">
-          <img
-            className="hover:cursor-pointer"
-            src="carousel-arrow-left.svg"
-            alt="Carousel Arrow Left"
-            onClick={() => setCarousel((prev) => (prev === 1 ? 4 : prev - 1))}
-          />
-          <img
-            className=""
-            ref={rollRef}
-            src={"carousel-" + carousel + ".png"}
-            alt={"Carousel " + carousel}
-          />
-          <img
-            className="hover:cursor-pointer"
-            src="carousel-arrow-right.svg"
-            alt="Carousel Arrow Right"
-            onClick={() => setCarousel((prev) => (prev === 4 ? 1 : prev + 1))}
-          />
-        </div>
-        <div className="m-3 flex items-center justify-center gap-3">
-          {[1, 2, 3, 4].map((num) => (
-            <div
-              key={num}
-              className={
-                num === carousel
-                  ? "h-3 w-3 rounded-full bg-lightyellow"
-                  : "h-3 w-3 rounded-full bg-white hover:cursor-pointer hover:bg-lightyellow"
-              }
-              onClick={() => setCarousel(num)}
-            ></div>
-          ))}
+      <div ref={rollRef}>
+        <div
+          className={
+            isTop
+              ? isBottom
+                ? "carousel-roll-right-out"
+                : "carousel-roll-left-in"
+              : "carousel-roll-left-out"
+          }
+        >
+          <div className="flex items-center justify-center">
+            <img
+              className="hover:cursor-pointer"
+              src="carousel-arrow-left.svg"
+              alt="Carousel Arrow Left"
+              onClick={() => setCarousel((prev) => (prev === 1 ? 4 : prev - 1))}
+            />
+            <img
+              className=""
+              src={"carousel-" + carousel + ".png"}
+              alt={"Carousel " + carousel}
+            />
+            <img
+              className="hover:cursor-pointer"
+              src="carousel-arrow-right.svg"
+              alt="Carousel Arrow Right"
+              onClick={() => setCarousel((prev) => (prev === 4 ? 1 : prev + 1))}
+            />
+          </div>
+          <div className="m-3 flex items-center justify-center gap-3">
+            {[1, 2, 3, 4].map((num) => (
+              <div
+                key={num}
+                className={
+                  num === carousel
+                    ? "h-3 w-3 rounded-full bg-lightyellow"
+                    : "h-3 w-3 rounded-full bg-white hover:cursor-pointer hover:bg-lightyellow"
+                }
+                onClick={() => setCarousel(num)}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
