@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-inter;
+  @apply overflow-x-hidden font-inter;
 }
 
 .masthead-ring-rotate {
@@ -30,19 +30,6 @@ body {
   }
   to {
     transform: translateX(0px) rotate(0deg);
-  }
-}
-
-.carousel-roll-left-out {
-  transform: translateX(-1000px);
-  animation: rollLeftOut 1s linear;
-}
-@keyframes rollLeftOut {
-  from {
-    transform: translateX(0px) rotate(360deg);
-  }
-  to {
-    transform: translateX(-1000px) rotate(0deg);
   }
 }
 
@@ -82,5 +69,61 @@ body {
   }
   to {
     transform: scale(0);
+  }
+}
+
+.chamfer-right-in {
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+  transform: translateX(0px);
+  animation: chamferRightIn 1s linear;
+}
+@keyframes chamferRightIn {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.chamfer-right-out {
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+  transform: translateX(-1000px);
+  animation: chamferRightOut 1s linear;
+}
+@keyframes chamferRightOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+.chamfer-left-in {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60px 100%);
+  transform: translateX(0px);
+  animation: chamferLeftIn 1s linear;
+}
+@keyframes chamferLeftIn {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.chamfer-left-out {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 60px 100%);
+  transform: translateX(1000px);
+  animation: chamferLeftOut 1s linear;
+}
+@keyframes chamferLeftOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1000px);
   }
 }

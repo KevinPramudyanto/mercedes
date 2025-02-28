@@ -29,7 +29,7 @@ const Introduction = () => {
   }, []);
 
   return (
-    <div className="bg-darkgray p-20">
+    <div className="overflow-hidden bg-darkgray p-20">
       <div className="flex flex-col items-center justify-center gap-2">
         <div className="flex items-center justify-center gap-5 border-b-2 border-b-lightyellow pb-2 text-xl font-bold">
           <h5>
@@ -80,11 +80,9 @@ const Introduction = () => {
       <div ref={rollRef}>
         <div
           className={
-            isTop
-              ? isBottom
-                ? "carousel-roll-right-out"
-                : "carousel-roll-left-in"
-              : "carousel-roll-left-out"
+            isTop && !isBottom
+              ? "carousel-roll-left-in"
+              : "carousel-roll-right-out"
           }
         >
           <div className="flex items-center justify-center">
