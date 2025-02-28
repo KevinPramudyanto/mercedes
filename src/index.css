@@ -8,30 +8,53 @@ body {
   @apply font-inter;
 }
 
-.masthead-ring {
-  animation: spin 3s linear 1;
+.masthead-ring-rotate {
+  animation: spin 10s linear infinite;
 }
 @keyframes spin {
   from {
     transform: rotate(0deg);
-    opacity: 100;
   }
   to {
     transform: rotate(360deg);
-    opacity: 0;
   }
 }
 
-.masthead-ring-rotate {
-  animation: spin 1s linear 3;
+.carousel-roll-left-in {
+  transform: translateX(0px);
+  animation: rollLeftIn 1s linear;
 }
-@keyframes spin {
+@keyframes rollLeftIn {
   from {
-    transform: rotate(0deg);
-    opacity: 100;
+    transform: translateX(-1000px) rotate(-360deg);
   }
   to {
-    transform: rotate(360deg);
-    opacity: 0;
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.carousel-roll-left-out {
+  transform: translateX(-1000px);
+  animation: rollLeftOut 1s linear;
+}
+@keyframes rollLeftOut {
+  from {
+    transform: translateX(0px) rotate(360deg);
+  }
+  to {
+    transform: translateX(-1000px) rotate(0deg);
+  }
+}
+
+.carousel-roll-right-out {
+  transform: translateX(1000px);
+  animation: rollRightOut 1s linear;
+}
+@keyframes rollRightOut {
+  from {
+    transform: translateX(0px) rotate(-360deg);
+  }
+  to {
+    transform: translateX(1000px) rotate(0deg);
   }
 }

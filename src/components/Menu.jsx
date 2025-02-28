@@ -6,13 +6,13 @@ const Menu = () => {
   const handleClick = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <div className="bg-lightgray fixed right-4 top-0 z-50 w-12 rounded-b-full opacity-50">
+    <div className="fixed right-4 top-0 z-50 w-12 rounded-b-full bg-lightgray opacity-90">
       <img
         className="m-auto border-b border-b-white p-3"
         src="nav-hamburger.svg"
         alt="Hamburger Menu"
       />
-      <div>
+      <nav>
         {isMenuOpen ? (
           <>
             <img
@@ -55,7 +55,7 @@ const Menu = () => {
             onClick={handleClick}
           />
         )}
-      </div>
+      </nav>
     </div>
   );
 };

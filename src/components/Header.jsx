@@ -23,37 +23,41 @@ const Header = () => {
 
   return (
     <>
-      <div className="masthead-ring fixed z-30 flex h-screen w-screen items-center justify-center opacity-0">
-        <img
-          className="max-w-screen max-h-screen object-cover"
-          src="masthead_ring.svg"
-          alt="Masthead Ring"
-        />
-      </div>
-      <div className="masthead-ring-rotate fixed z-40 flex h-screen w-screen items-center justify-center opacity-0">
-        <img
-          className="max-w-screen max-h-screen object-cover"
-          src="masthead_ring_rotate.svg"
-          alt="Masthead Ring Rotate"
-        />
-      </div>
-      <div className={isMiddle ? "absolute top-[100vh]" : "fixed"}>
+      <div
+        className={
+          isMiddle
+            ? "absolute top-[100vh] flex items-center justify-center"
+            : "fixed flex items-center justify-center"
+        }
+      >
         <img
           className="h-screen w-screen object-cover"
           src="masthead_back_img.jpg"
           alt="Masthead Back"
         />
-        <div className="text-darkgray absolute top-32 w-full text-center text-5xl font-extrabold opacity-80">
+        <img
+          className="absolute top-0 h-screen object-cover opacity-25"
+          src="masthead_ring.svg"
+          alt="Masthead Ring"
+        />
+        <img
+          className="masthead-ring-rotate absolute top-0 h-screen object-cover"
+          src="masthead_ring_rotate.svg"
+          alt="Masthead Ring Rotate"
+        />
+        <h1 className="absolute top-32 text-5xl font-extrabold text-darkgray opacity-80">
           Mercedes-Benz SL55 AMG
-        </div>
+        </h1>
       </div>
+
       <div className="h-screen"></div>
+
       <div
-        className="flex h-screen w-screen items-center justify-center"
+        className="flex h-screen items-center justify-center"
         ref={stickyRef}
       >
-        <div className="bg-darkgray m-auto flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-full p-10 text-center text-xl font-bold text-white opacity-80">
-          <div>A luxurious upgrade that packs plenty of firepower</div>
+        <div className="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-full bg-darkgray p-10 text-center text-xl font-bold text-white opacity-80">
+          <p>A luxurious upgrade that packs plenty of firepower</p>
           <img src="main-arrow-down.svg" alt="Main Arrow Down" />
         </div>
       </div>
