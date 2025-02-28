@@ -176,6 +176,7 @@ const Flawed = () => {
           ref={middle1aRef}
           src="Flawed_left1.png"
           alt="Flawed Left 1"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_left1.png");
             setAlt("Flawed Left 1");
@@ -194,6 +195,7 @@ const Flawed = () => {
           ref={middle1bRef}
           src="Flawed_right1.png"
           alt="Flawed Right 1"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_right1.png");
             setAlt("Flawed Right 1");
@@ -212,6 +214,7 @@ const Flawed = () => {
           ref={middle2aRef}
           src="Flawed_left2.png"
           alt="Flawed Left 2"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_left2.png");
             setAlt("Flawed Left 2");
@@ -230,6 +233,7 @@ const Flawed = () => {
           ref={middle2bRef}
           src="Flawed_right2.png"
           alt="Flawed Right 2"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_right2.png");
             setAlt("Flawed Right 2");
@@ -248,6 +252,7 @@ const Flawed = () => {
           ref={middle3aRef}
           src="Flawed_left3.png"
           alt="Flawed Left 3"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_left3.png");
             setAlt("Flawed Left 3");
@@ -266,6 +271,7 @@ const Flawed = () => {
           ref={middle3bRef}
           src="Flawed_right3.png"
           alt="Flawed Right 3"
+          loading="lazy"
           onClick={() => {
             setSrc("Flawed_right3.png");
             setAlt("Flawed Right 3");
@@ -290,6 +296,7 @@ const Flawed = () => {
             className=""
             src="footer_left_what_we_like.png"
             alt="Footer Left What We Like"
+            loading="lazy"
           />
           <div className="flex items-center justify-start">
             <div className="flex flex-col items-end justify-center">
@@ -350,6 +357,7 @@ const Flawed = () => {
             className=""
             src="footer_right_what_we_dislike.png"
             alt="Footer Right What We Dislike"
+            loading="lazy"
           />
         </div>
       </div>
@@ -358,6 +366,7 @@ const Flawed = () => {
         className="m-auto"
         src="bottom_advertisment.png"
         alt="Bottom Advertisment"
+        loading="lazy"
       />
 
       <div className="mt-12 bg-lightyellow px-8">
@@ -368,6 +377,7 @@ const Flawed = () => {
                 className="m-auto"
                 src="asiaone_footer_desktop.png"
                 alt="Asiaone Footer Desktop"
+                loading="lazy"
               />
             </div>
           </div>

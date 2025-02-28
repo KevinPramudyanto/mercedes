@@ -11,7 +11,12 @@ const OverLay = (props) => {
           X
         </div>
       </div>
-      <img className="mx-auto my-10" src={props.src} alt={props.alt} />
+      <img
+        className="mx-auto my-10"
+        src={props.src}
+        alt={props.alt}
+        loading="lazy"
+      />
       <h4 className="px-10 text-2xl text-white">{props.text}</h4>
       <h5 className="my-5 px-10 text-lightyellow">sgCarMart</h5>
     </div>

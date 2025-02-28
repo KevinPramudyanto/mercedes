@@ -60,6 +60,7 @@ const Interior = () => {
             className="h-screen w-screen object-cover"
             src="parallax_interior1.png"
             alt="Parallax Interior 1"
+            loading="lazy"
           />
           <h2
             className={
@@ -119,6 +120,7 @@ const Interior = () => {
             className="h-screen w-screen object-cover"
             src="parallax_interior2.png"
             alt="Parallax Interior 2"
+            loading="lazy"
           />
         </div>
 

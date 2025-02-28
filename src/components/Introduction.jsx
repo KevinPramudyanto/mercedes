@@ -90,17 +90,20 @@ const Introduction = () => {
               className="hover:cursor-pointer"
               src="carousel-arrow-left.svg"
               alt="Carousel Arrow Left"
+              loading="lazy"
               onClick={() => setCarousel((prev) => (prev === 1 ? 4 : prev - 1))}
             />
             <img
               className=""
               src={"carousel-" + carousel + ".png"}
               alt={"Carousel " + carousel}
+              loading="lazy"
             />
             <img
               className="hover:cursor-pointer"
               src="carousel-arrow-right.svg"
               alt="Carousel Arrow Right"
+              loading="lazy"
               onClick={() => setCarousel((prev) => (prev === 4 ? 1 : prev + 1))}
             />
           </div>

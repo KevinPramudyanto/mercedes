@@ -11,6 +11,7 @@ const Menu = () => {
         className="m-auto border-b border-b-white p-3"
         src="nav-hamburger.svg"
         alt="Hamburger Menu"
+        loading="lazy"
       />
       <nav>
         {isMenuOpen ? (
@@ -24,6 +25,7 @@ const Menu = () => {
                 className="m-auto p-3 invert"
                 src="nav-whatsapp.svg"
                 alt="Whatsapp"
+                loading="lazy"
               />
             </a>
 
@@ -36,6 +38,7 @@ const Menu = () => {
                 className="m-auto p-3 invert"
                 src="nav-instagram.svg"
                 alt="Instagram"
+                loading="lazy"
               />
             </a>
 
@@ -48,6 +51,7 @@ const Menu = () => {
                 className="m-auto p-3 invert"
                 src="nav-telegram.svg"
                 alt="Telegram"
+                loading="lazy"
               />
             </a>
 
@@ -60,6 +64,7 @@ const Menu = () => {
                 className="m-auto p-3 invert"
                 src="nav-facebook.svg"
                 alt="Facebook"
+                loading="lazy"
               />
             </a>
 
@@ -68,6 +73,7 @@ const Menu = () => {
                 className="m-auto p-3 invert"
                 src="nav-twitter.svg"
                 alt="Twitter"
+                loading="lazy"
               />
             </a>
 
@@ -75,6 +81,7 @@ const Menu = () => {
               className="m-auto p-3 hover:cursor-pointer"
               src="nav-arrow-up.svg"
               alt="Arrow Up"
+              loading="lazy"
               onClick={handleClick}
             />
           </>
@@ -83,6 +90,7 @@ const Menu = () => {
             className="m-auto p-3 hover:cursor-pointer"
             src="nav-share.svg"
             alt="Share"
+            loading="lazy"
             onClick={handleClick}
           />
         )}

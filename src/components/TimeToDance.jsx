@@ -154,6 +154,7 @@ const TimeToDance = () => {
           ref={progressRef}
           src="progress.png"
           alt="Progress"
+          loading="lazy"
         />
       </div>
 

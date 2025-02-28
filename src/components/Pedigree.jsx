@@ -63,6 +63,7 @@ const Pedigree = () => {
               className="w-full"
               src="pedigree_porsche.png"
               alt="Pedigree Porsche"
+              loading="lazy"
             />
             <h5 className="absolute right-0 top-5 rounded-full bg-darkyellow py-2 pl-6 pr-20 text-white">
               Porsche 911
@@ -99,6 +100,7 @@ const Pedigree = () => {
               className="w-full"
               src="pedigree_mercedes_benz_sl.png"
               alt="Pedigree Mercedes Benz SL"
+              loading="lazy"
             />
             <h5 className="absolute left-0 top-5 rounded-full bg-darkyellow py-2 pl-16 pr-3 text-white">
               Mercedes-Benz SL

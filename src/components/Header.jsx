@@ -34,16 +34,19 @@ const Header = () => {
           className="h-screen w-screen object-cover"
           src="masthead_back_img.jpg"
           alt="Masthead Back"
+          loading="lazy"
         />
         <img
           className="absolute top-0 h-screen object-cover opacity-25"
           src="masthead_ring.svg"
           alt="Masthead Ring"
+          loading="lazy"
         />
         <img
           className="masthead-ring-rotate absolute top-0 h-screen object-cover"
           src="masthead_ring_rotate.svg"
           alt="Masthead Ring Rotate"
+          loading="lazy"
         />
         <h1 className="absolute top-32 text-5xl font-extrabold text-darkgray opacity-80">
           Mercedes-Benz SL55 AMG
@@ -58,7 +61,7 @@ const Header = () => {
       >
         <div className="flex h-64 w-64 flex-col items-center justify-center gap-5 rounded-full bg-darkgray p-10 text-center text-xl font-bold text-white opacity-80">
           <p>A luxurious upgrade that packs plenty of firepower</p>
-          <img src="main-arrow-down.svg" alt="Main Arrow Down" />
+          <img src="main-arrow-down.svg" alt="Main Arrow Down" loading="lazy" />
         </div>
       </div>
     </>
