@@ -15,31 +15,62 @@ const Menu = () => {
       <nav>
         {isMenuOpen ? (
           <>
-            <img
-              className="m-auto p-3 invert"
-              src="nav-whatsapp.svg"
-              alt="Whatsapp"
-            />
-            <img
-              className="m-auto p-3 invert"
-              src="nav-instagram.svg"
-              alt="Instagram"
-            />
-            <img
-              className="m-auto p-3 invert"
-              src="nav-telegram.svg"
-              alt="Telegram"
-            />
-            <img
-              className="m-auto p-3 invert"
-              src="nav-facebook.svg"
-              alt="Facebook"
-            />
-            <img
-              className="m-auto p-3 invert"
-              src="nav-twitter.svg"
-              alt="Twitter"
-            />
+            <a
+              href="https://www.whatsapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="m-auto p-3 invert"
+                src="nav-whatsapp.svg"
+                alt="Whatsapp"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="m-auto p-3 invert"
+                src="nav-instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+
+            <a
+              href="https://web.telegram.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="m-auto p-3 invert"
+                src="nav-telegram.svg"
+                alt="Telegram"
+              />
+            </a>
+
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="m-auto p-3 invert"
+                src="nav-facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+              <img
+                className="m-auto p-3 invert"
+                src="nav-twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+
             <img
               className="m-auto p-3 hover:cursor-pointer"
               src="nav-arrow-up.svg"
