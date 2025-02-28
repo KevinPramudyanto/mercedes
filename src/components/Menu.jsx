@@ -6,7 +6,7 @@ const Menu = () => {
   const handleClick = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <div className="fixed right-4 top-0 z-50 w-12 rounded-b-full bg-lightgray opacity-90">
+    <div className="fixed right-4 top-0 z-40 w-12 rounded-b-full bg-lightgray opacity-90">
       <img
         className="m-auto border-b border-b-white p-3"
         src="nav-hamburger.svg"

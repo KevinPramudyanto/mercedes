@@ -4,6 +4,7 @@ import Introduction from "./components/Introduction";
 import Pedigree from "./components/Pedigree";
 import Interior from "./components/Interior";
 import TimeToDance from "./components/TimeToDance";
+import Flawed from "./components/Flawed";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Pedigree />
       <Interior />
       <TimeToDance />
+      <Flawed />
     </>
   );
 };

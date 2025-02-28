@@ -127,3 +127,55 @@ body {
     transform: translateX(1000px);
   }
 }
+
+.flawed-left-in {
+  transform: translateX(0px);
+  animation: flawedLeftIn 1s linear;
+}
+@keyframes flawedLeftIn {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.flawed-left-out {
+  transform: translateX(-1000px);
+  animation: flawedLeftOut 1s linear;
+}
+@keyframes flawedLeftOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+.flawed-right-in {
+  transform: translateX(0px);
+  animation: flawedRightIn 1s linear;
+}
+@keyframes flawedRightIn {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.flawed-right-out {
+  transform: translateX(1000px);
+  animation: flawedRightOut 1s linear;
+}
+@keyframes flawedRightOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
