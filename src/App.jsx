@@ -9,29 +9,15 @@ const Flawed = lazy(() => import("./components/Flawed"));
 
 const App = () => {
   return (
-    <>
-      <Suspense fallback={<p>Menu</p>}>
-        <Menu />
-      </Suspense>
-      <Suspense fallback={<p>Header</p>}>
-        <Header />
-      </Suspense>
-      <Suspense fallback={<p>Carousel</p>}>
-        <Carousel />
-      </Suspense>
-      <Suspense fallback={<p>Pedigree</p>}>
-        <Pedigree />
-      </Suspense>
-      <Suspense fallback={<p>Interior</p>}>
-        <Interior />
-      </Suspense>
-      <Suspense fallback={<p>TimeToDance</p>}>
-        <TimeToDance />
-      </Suspense>
-      <Suspense fallback={<p>Flawed</p>}>
-        <Flawed />
-      </Suspense>
-    </>
+    <Suspense fallback={<p>Loading...</p>}>
+      <Menu />
+      <Header />
+      <Carousel />
+      <Pedigree />
+      <Interior />
+      <TimeToDance />
+      <Flawed />
+    </Suspense>
   );
 };
 

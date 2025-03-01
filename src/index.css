@@ -328,6 +328,81 @@ body {
   }
 }
 
+.flawed-point-opacity-in {
+  opacity: 1;
+  animation: flawedPointOpacityIn 1.5s linear;
+}
+@keyframes flawedPointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flawed-point-opacity-out {
+  opacity: 0;
+}
+
+.flawed-line-opacity-in {
+  animation: flawedLineOpacityIn 2s linear;
+}
+@keyframes flawedLineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.flawed-line-opacity-out {
+  opacity: 0;
+}
+
+.flawed-line-rotate-in {
+  transform: rotate(-135deg) scale(1);
+  animation: flawedLineRotateIn 3s linear;
+}
+@keyframes flawedLineRotateIn {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(-135deg) scale(1);
+  }
+}
+.flawed-line-rotate-out {
+  transform: rotate(0deg) scale(0);
+}
+
+.flawed-circle-rotate-in {
+  transform: rotate(135deg);
+  animation: flawedCircleRotateIn 3s linear;
+}
+@keyframes flawedCircleRotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+.flawed-circle-rotate-out {
+  transform: rotate(0deg);
+}
+
 /* * {
   border: 1px solid black;
 } */

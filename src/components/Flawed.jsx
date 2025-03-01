@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Modal from "./Modal.jsx";
+import FlawedGreyCircleLeft from "./FlawedGreyCircleLeft.jsx";
+import FlawedGreyCircleRight from "./FlawedGreyCircleRight.jsx";
 
 const Flawed = () => {
   const [isChamferRight, setIsChamferRight] = useState(false);
@@ -108,7 +110,7 @@ const Flawed = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative bg-neutral-300">
       <h2
         className={
           isChamferLeft
@@ -169,120 +171,156 @@ const Flawed = () => {
         {showModal && (
           <Modal src={src} alt={alt} text={text} setShowModal={setShowModal} />
         )}
-        <img
-          className={
-            isMiddle1a
-              ? "flawed-left-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-left-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle1aRef}
-          src="Flawed_left1.png"
-          alt="Flawed Left 1"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_left1.png");
-            setAlt("Flawed Left 1");
-            setText(
-              "SL comes with a 'free' IWC timepiece with a stopwatch feature for recording lap times.",
-            );
-            setShowModal(true);
-          }}
-        />
-        <img
-          className={
-            isMiddle1b
-              ? "flawed-right-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-right-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle1bRef}
-          src="Flawed_right1.png"
-          alt="Flawed Right 1"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_right1.png");
-            setAlt("Flawed Right 1");
-            setText(
-              '"Full-fat" AMG models continue to have engines assembled by a single engineer, whose signature adorns the engine cover.',
-            );
-            setShowModal(true);
-          }}
-        />
-        <img
-          className={
-            isMiddle2a
-              ? "flawed-left-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-left-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle2aRef}
-          src="Flawed_left2.png"
-          alt="Flawed Left 2"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_left2.png");
-            setAlt("Flawed Left 2");
-            setText(
-              "The SL 55 can adapt to your personal driving style — all you need to do is adjust these parameters.",
-            );
-            setShowModal(true);
-          }}
-        />
-        <img
-          className={
-            isMiddle2b
-              ? "flawed-right-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-right-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle2bRef}
-          src="Flawed_right2.png"
-          alt="Flawed Right 2"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_right2.png");
-            setAlt("Flawed Right 2");
-            setText(
-              "We're not sure if the next SL will be available with a V8 or even an internal combustion engine, so savour this one while it's still around.",
-            );
-            setShowModal(true);
-          }}
-        />
-        <img
-          className={
-            isMiddle3a
-              ? "flawed-left-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-left-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle3aRef}
-          src="Flawed_left3.png"
-          alt="Flawed Left 3"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_left3.png");
-            setAlt("Flawed Left 3");
-            setText(
-              "The soft-top actually opens and closes quickly - provided the virtual toggle doesn't slip away from your finger, of course.",
-            );
-            setShowModal(true);
-          }}
-        />
-        <img
-          className={
-            isMiddle3b
-              ? "flawed-right-in rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-              : "flawed-right-out rounded-full border-8 border-white hover:cursor-pointer hover:border-darkyellow"
-          }
-          ref={middle3bRef}
-          src="Flawed_right3.png"
-          alt="Flawed Right 3"
-          loading="lazy"
-          onClick={() => {
-            setSrc("Flawed_right3.png");
-            setAlt("Flawed Right 3");
-            setText(
-              "The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery.",
-            );
-            setShowModal(true);
-          }}
-        />
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle1a
+                ? "flawed-left-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-left-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle1aRef}
+            src="Flawed_left1.png"
+            alt="Flawed Left 1"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_left1.png");
+              setAlt("Flawed Left 1");
+              setText(
+                "SL comes with a 'free' IWC timepiece with a stopwatch feature for recording lap times.",
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleLeft
+            animateTrigger={isMiddle1a}
+            text="SL comes with a 'free' IWC timepiece with a stopwatch feature for recording lap times."
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle1b
+                ? "flawed-right-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-right-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle1bRef}
+            src="Flawed_right1.png"
+            alt="Flawed Right 1"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_right1.png");
+              setAlt("Flawed Right 1");
+              setText(
+                '"Full-fat" AMG models continue to have engines assembled by a single engineer, whose signature adorns the engine cover.',
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleRight
+            animateTrigger={isMiddle1b}
+            text='"Full-fat" AMG models continue to have engines assembled by a single engineer, whose signature adorns the engine cover.'
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle2a
+                ? "flawed-left-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-left-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle2aRef}
+            src="Flawed_left2.png"
+            alt="Flawed Left 2"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_left2.png");
+              setAlt("Flawed Left 2");
+              setText(
+                "The SL 55 can adapt to your personal driving style — all you need to do is adjust these parameters.",
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleLeft
+            animateTrigger={isMiddle2a}
+            text="The SL 55 can adapt to your personal driving style — all you need to do is adjust these parameters."
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle2b
+                ? "flawed-right-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-right-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle2bRef}
+            src="Flawed_right2.png"
+            alt="Flawed Right 2"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_right2.png");
+              setAlt("Flawed Right 2");
+              setText(
+                "We're not sure if the next SL will be available with a V8 or even an internal combustion engine, so savour this one while it's still around.",
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleRight
+            animateTrigger={isMiddle2b}
+            text="We're not sure if the next SL will be available with a V8 or even an internal combustion engine, so savour this one while it's still around."
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle3a
+                ? "flawed-left-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-left-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle3aRef}
+            src="Flawed_left3.png"
+            alt="Flawed Left 3"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_left3.png");
+              setAlt("Flawed Left 3");
+              setText(
+                "The soft-top actually opens and closes quickly - provided the virtual toggle doesn't slip away from your finger, of course.",
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleLeft
+            animateTrigger={isMiddle3a}
+            text="The soft-top actually opens and closes quickly - provided the virtual toggle doesn't slip away from your finger, of course."
+          />
+        </div>
+        <div className="flex items-center justify-center">
+          <img
+            className={
+              isMiddle3b
+                ? "flawed-right-in rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+                : "flawed-right-out rounded-full border-8 border-neutral-300 hover:cursor-pointer hover:border-darkyellow"
+            }
+            ref={middle3bRef}
+            src="Flawed_right3.png"
+            alt="Flawed Right 3"
+            loading="lazy"
+            onClick={() => {
+              setSrc("Flawed_right3.png");
+              setAlt("Flawed Right 3");
+              setText(
+                "The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery.",
+              );
+              setShowModal(true);
+            }}
+          />
+          <FlawedGreyCircleRight
+            animateTrigger={isMiddle3b}
+            text="The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery."
+          />
+        </div>
       </div>
 
       <div className="my-12 grid grid-cols-2 gap-3">
