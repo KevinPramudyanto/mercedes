@@ -10,12 +10,15 @@ const Pedigree = () => {
     const handleScroll = () => {
       if (topRef.current) {
         setIsTop(
-          topRef.current.getBoundingClientRect().bottom <= window.innerHeight,
+          topRef.current.getBoundingClientRect().top +
+            topRef.current.offsetHeight / 2 <=
+            window.innerHeight,
         );
       }
       if (bottomRef.current) {
         setIsBottom(
-          bottomRef.current.getBoundingClientRect().bottom <=
+          bottomRef.current.getBoundingClientRect().top +
+            bottomRef.current.offsetHeight / 2 <=
             window.innerHeight,
         );
       }

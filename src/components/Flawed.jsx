@@ -31,13 +31,15 @@ const Flawed = () => {
     const handleScroll = () => {
       if (chamferRightRef.current) {
         setIsChamferRight(
-          chamferRightRef.current.getBoundingClientRect().bottom <=
+          chamferRightRef.current.getBoundingClientRect().top +
+            chamferRightRef.current.offsetHeight / 2 <=
             window.innerHeight,
         );
       }
       if (chamferLeftRef.current) {
         setIsChamferLeft(
-          chamferLeftRef.current.getBoundingClientRect().bottom <=
+          chamferLeftRef.current.getBoundingClientRect().top +
+            chamferLeftRef.current.offsetHeight / 2 <=
             window.innerHeight,
         );
       }

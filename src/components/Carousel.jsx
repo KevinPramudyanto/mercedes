@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const Introduction = () => {
+const Carousel = () => {
   const [isTop, setIsTop] = useState(false);
   const [isBottom, setIsBottom] = useState(false);
   const [carousel, setCarousel] = useState(1);
@@ -46,7 +46,7 @@ const Introduction = () => {
         </h6>
       </div>
 
-      <div className="mx-auto my-20 max-w-screen-md text-white">
+      <div className="mx-auto mb-32 mt-20 max-w-screen-md text-white">
         <p className="mb-5">
           The iconic SL has been transformed from 'super-light' to 'superb
           luxurious', and in SL55 form, packs plenty of firepower, too.
@@ -106,6 +106,55 @@ const Introduction = () => {
               loading="lazy"
               onClick={() => setCarousel((prev) => (prev === 4 ? 1 : prev + 1))}
             />
+            <div
+              className={
+                isTop && !isBottom
+                  ? "carousel-point-opacity-in absolute flex h-5 w-5 -translate-y-10 translate-x-28 items-center justify-center rounded-full bg-white"
+                  : "carousel-point-opacity-out absolute flex h-5 w-5 -translate-y-10 translate-x-28 items-center justify-center rounded-full bg-white"
+              }
+            >
+              <div className="flex items-center justify-start">
+                <div
+                  className={
+                    isTop && !isBottom
+                      ? "carousel-line-opacity-in absolute flex w-36 origin-left items-center justify-end border-y-4 border-dashed border-white"
+                      : "carousel-line-opacity-out absolute flex w-36 origin-left items-center justify-end border-y-4 border-dashed border-white"
+                  }
+                >
+                  <div
+                    className={
+                      isTop && !isBottom
+                        ? "carousel-line-rotate-in absolute flex w-64 origin-right items-center justify-start border-y-4 border-dashed border-white"
+                        : "carousel-line-rotate-out absolute flex w-64 origin-right items-center justify-start border-y-4 border-dashed border-white"
+                    }
+                  >
+                    <div className="flex items-center justify-center">
+                      <div
+                        className={
+                          isTop && !isBottom
+                            ? "carousel-circle-rotate-in absolute flex h-64 w-64 items-center justify-center rounded-full bg-lightgray p-10 text-center font-bold text-white"
+                            : "carousel-circle-rotate-out absolute flex h-64 w-64 items-center justify-center rounded-full bg-lightgray p-10 text-center font-bold text-white"
+                        }
+                      >
+                        <div className="flex flex-col items-center justify-center gap-6">
+                          <p>
+                            {
+                              [
+                                "The wide bonnet and low, aggressive stance hints at the SL's capabilities.",
+                                "You won't always see the quad exhaust tips, but you'll definitely hear their symphony.",
+                                "Red brake callipers draw your attention to the large cross-drilled rotors peering out behind the 21-inch wheels.",
+                                "The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery.",
+                              ][carousel - 1]
+                            }
+                          </p>
+                          <p>PHOTO: sgCarMart</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="m-3 flex items-center justify-center gap-3">
             {[1, 2, 3, 4].map((num) => (
@@ -126,4 +175,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default Carousel;

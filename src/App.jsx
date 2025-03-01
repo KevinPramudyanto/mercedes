@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 const Menu = lazy(() => import("./components/Menu"));
 const Header = lazy(() => import("./components/Header"));
-const Introduction = lazy(() => import("./components/Introduction"));
+const Carousel = lazy(() => import("./components/Carousel"));
 const Pedigree = lazy(() => import("./components/Pedigree"));
 const Interior = lazy(() => import("./components/Interior"));
 const TimeToDance = lazy(() => import("./components/TimeToDance"));
@@ -16,8 +16,8 @@ const App = () => {
       <Suspense fallback={<p>Header</p>}>
         <Header />
       </Suspense>
-      <Suspense fallback={<p>Introduction</p>}>
-        <Introduction />
+      <Suspense fallback={<p>Carousel</p>}>
+        <Carousel />
       </Suspense>
       <Suspense fallback={<p>Pedigree</p>}>
         <Pedigree />

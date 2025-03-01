@@ -22,9 +22,9 @@ body {
 
 .carousel-roll-left-in {
   transform: translateX(0px);
-  animation: rollLeftIn 1s linear;
+  animation: carouselRollLeftIn 1s linear;
 }
-@keyframes rollLeftIn {
+@keyframes carouselRollLeftIn {
   from {
     transform: translateX(-1000px) rotate(-360deg);
   }
@@ -35,15 +35,90 @@ body {
 
 .carousel-roll-right-out {
   transform: translateX(1000px);
-  animation: rollRightOut 1s linear;
+  animation: carouselRollRightOut 1s linear;
 }
-@keyframes rollRightOut {
+@keyframes carouselRollRightOut {
   from {
     transform: translateX(0px) rotate(-360deg);
   }
   to {
     transform: translateX(1000px) rotate(0deg);
   }
+}
+
+.carousel-point-opacity-in {
+  opacity: 1;
+  animation: carouselPointOpacityIn 1.5s linear;
+}
+@keyframes carouselPointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carousel-point-opacity-out {
+  opacity: 0;
+}
+
+.carousel-line-opacity-in {
+  animation: carouselLineOpacityIn 2s linear;
+}
+@keyframes carouselLineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carousel-line-opacity-out {
+  opacity: 0;
+}
+
+.carousel-line-rotate-in {
+  transform: rotate(135deg) scale(1);
+  animation: carouselLineRotateIn 3s linear;
+}
+@keyframes carouselLineRotateIn {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1);
+  }
+}
+.carousel-line-rotate-out {
+  transform: rotate(0deg) scale(0);
+}
+
+.carousel-circle-rotate-in {
+  transform: rotate(-135deg);
+  animation: carouselCircleRotateIn 3s linear;
+}
+@keyframes carouselCircleRotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+.carousel-circle-rotate-out {
+  transform: rotate(0deg);
 }
 
 .grow-in {
@@ -128,6 +203,79 @@ body {
   }
 }
 
+.interior-point-opacity-in {
+  opacity: 1;
+  animation: interiorPointOpacityIn 0.5s linear;
+}
+@keyframes interiorPointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.interior-point-opacity-out {
+  opacity: 0;
+}
+
+.interior-line-opacity-in {
+  transform: rotate(90deg);
+  animation: interiorLineOpacityIn 1s linear;
+}
+@keyframes interiorLineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.interior-line-opacity-out {
+  opacity: 0;
+}
+
+.interior-line-rotate-in {
+  transform: rotate(135deg) scale(1);
+  animation: interiorLineRotateIn 2s linear;
+}
+@keyframes interiorLineRotateIn {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1);
+  }
+}
+.interior-line-rotate-out {
+  transform: rotate(0deg) scale(0);
+}
+
+.interior-circle-rotate-in {
+  transform: rotate(-225deg);
+  animation: interiorCircleRotateIn 2s linear;
+}
+@keyframes interiorCircleRotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-225deg);
+  }
+}
+.interior-circle-rotate-out {
+  transform: rotate(0deg);
+}
+
 .flawed-left-in {
   transform: translateX(0px);
   animation: flawedLeftIn 1s linear;
@@ -179,3 +327,7 @@ body {
     transform: translateX(1000px);
   }
 }
+
+/* * {
+  border: 1px solid black;
+} */
