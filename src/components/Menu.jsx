@@ -6,25 +6,23 @@ const Menu = () => {
   const handleClick = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <div className="fixed right-4 top-0 z-40 w-12 rounded-b-full bg-lightgray opacity-90">
-      <img
-        className="m-auto border-b border-b-white p-3"
-        src="nav-hamburger.svg"
-        alt="Hamburger Menu"
-        loading="lazy"
-      />
-      <nav>
+    <div className="fixed right-7 top-0 z-40 flex flex-col items-center justify-center gap-1">
+      <div className="flex h-[66px] w-[66px] items-center justify-center bg-lightgray">
+        <img src="nav-hamburger.svg" alt="Nav Hamburger" loading="lazy" />
+      </div>
+
+      <nav className="flex min-h-[66px] w-[66px] items-center justify-center rounded-b-full bg-lightgray">
         {isMenuOpen ? (
-          <>
+          <div className="flex flex-col items-center justify-center gap-6 p-3">
             <a
               href="https://www.whatsapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                className="m-auto p-3 invert"
+                className="invert"
                 src="nav-whatsapp.svg"
-                alt="Whatsapp"
+                alt="Nav Whatsapp"
                 loading="lazy"
               />
             </a>
@@ -35,9 +33,9 @@ const Menu = () => {
               rel="noopener noreferrer"
             >
               <img
-                className="m-auto p-3 invert"
+                className="invert"
                 src="nav-instagram.svg"
-                alt="Instagram"
+                alt="Nav Instagram"
                 loading="lazy"
               />
             </a>
@@ -48,9 +46,9 @@ const Menu = () => {
               rel="noopener noreferrer"
             >
               <img
-                className="m-auto p-3 invert"
+                className="invert"
                 src="nav-telegram.svg"
-                alt="Telegram"
+                alt="Nav Telegram"
                 loading="lazy"
               />
             </a>
@@ -61,35 +59,35 @@ const Menu = () => {
               rel="noopener noreferrer"
             >
               <img
-                className="m-auto p-3 invert"
+                className="invert"
                 src="nav-facebook.svg"
-                alt="Facebook"
+                alt="Nav Facebook"
                 loading="lazy"
               />
             </a>
 
             <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
               <img
-                className="m-auto p-3 invert"
+                className="invert"
                 src="nav-twitter.svg"
-                alt="Twitter"
+                alt="Nav Twitter"
                 loading="lazy"
               />
             </a>
 
             <img
-              className="m-auto p-3 hover:cursor-pointer"
+              className="hover:cursor-pointer"
               src="nav-arrow-up.svg"
-              alt="Arrow Up"
+              alt="Nav Arrow Up"
               loading="lazy"
               onClick={handleClick}
             />
-          </>
+          </div>
         ) : (
           <img
-            className="m-auto p-3 hover:cursor-pointer"
+            className="hover:cursor-pointer"
             src="nav-share.svg"
-            alt="Share"
+            alt="Nav Share"
             loading="lazy"
             onClick={handleClick}
           />
