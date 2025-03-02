@@ -1,0 +1,148 @@
+.rollIn {
+  transform: translateX(0px);
+  opacity: 1;
+  animation: rollIn 1s linear;
+}
+@keyframes rollIn {
+  0% {
+    transform: translateX(-1000px) rotate(-360deg);
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(-1000px) rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.rollOut {
+  transform: translateX(1000px);
+  opacity: 0;
+  animation: rollOut 1s linear;
+}
+@keyframes rollOut {
+  0% {
+    transform: translateX(0px) rotate(-360deg);
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(1000px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+.pointOpacityIn {
+  opacity: 1;
+  animation: pointOpacityIn 1.5s linear;
+}
+@keyframes pointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.pointOpacityOut {
+  opacity: 0;
+}
+
+.lineOpacityIn {
+  animation: lineOpacityIn 2s linear;
+}
+@keyframes lineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.lineOpacityOut {
+  opacity: 0;
+}
+
+.lineRotateIn {
+  transform: rotate(90deg) scale(1);
+  animation: lineRotateIn 3s linear;
+}
+@keyframes lineRotateIn {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(90deg) scale(1);
+  }
+}
+@keyframes lineRotateInLg {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(120deg) scale(1);
+  }
+}
+.lineRotateOut {
+  transform: rotate(0deg) scale(0);
+}
+
+.circleRotateIn {
+  transform: rotate(-90deg);
+  animation: circleRotateIn 3s linear;
+}
+@keyframes circleRotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+@keyframes circleRotateInLg {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-120deg);
+  }
+}
+.circleRotateOut {
+  transform: rotate(0deg);
+}
+
+@media (min-width: 1024px) {
+  .lineRotateIn {
+    transform: rotate(120deg) scale(1);
+    animation: lineRotateInLg 3s linear;
+  }
+
+  .circleRotateIn {
+    transform: rotate(-120deg);
+    animation: circleRotateInLg 3s linear;
+  }
+}

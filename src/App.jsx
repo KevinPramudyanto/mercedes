@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 const Menu = lazy(() => import("./components/Menu"));
-const Header = lazy(() => import("./components/Header"));
-const Carousel = lazy(() => import("./components/Carousel"));
+const Header = lazy(() => import("./components/header/Header.jsx"));
+const Carousel = lazy(() => import("./components/carousel/Carousel.jsx"));
 const Pedigree = lazy(() => import("./components/Pedigree"));
 const Interior = lazy(() => import("./components/Interior"));
 const TimeToDance = lazy(() => import("./components/TimeToDance"));

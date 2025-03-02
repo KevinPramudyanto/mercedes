@@ -8,18 +8,6 @@ body {
   @apply overflow-x-hidden font-inter;
 }
 
-.masthead-ring-rotate {
-  animation: spin 10s linear infinite;
-}
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .carousel-roll-left-in {
   transform: translateX(0px);
   animation: carouselRollLeftIn 1s linear;

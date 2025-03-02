@@ -1,6 +1,8 @@
+import styles from "./Header.module.css";
+
 const Header = () => {
   return (
-    <div className="relative">
+    <header className="relative">
       <div className="sticky top-0 flex items-start justify-end overflow-hidden">
         <img
           className="hidden h-screen w-screen object-cover object-bottom sm:block"
@@ -22,7 +24,7 @@ const Header = () => {
             loading="lazy"
           />
           <img
-            className="masthead-ring-rotate absolute object-cover"
+            className={styles.rotate + " absolute object-cover"}
             src="masthead_ring_rotate.svg"
             alt="Masthead Ring Rotate"
             loading="lazy"
@@ -53,7 +55,7 @@ const Header = () => {
           <img src="main-arrow-down.svg" alt="Main Arrow Down" loading="lazy" />
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 
