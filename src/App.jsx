@@ -3,7 +3,7 @@ const Menu = lazy(() => import("./components/menu/Menu.jsx"));
 const Header = lazy(() => import("./components/header/Header.jsx"));
 const Carousel = lazy(() => import("./components/carousel/Carousel.jsx"));
 const Pedigree = lazy(() => import("./components/pedigree/Pedigree.jsx"));
-const Interior = lazy(() => import("./components/Interior"));
+const Interior = lazy(() => import("./components/interior/Interior.jsx"));
 const TimeToDance = lazy(() => import("./components/TimeToDance"));
 const Flawed = lazy(() => import("./components/Flawed"));
 

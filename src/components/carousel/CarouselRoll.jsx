@@ -78,59 +78,53 @@ const CarouselRoll = () => {
             ))}
           </div>
 
-          <div
-            className={
-              (isAnimateIn && !isAnimateOut
-                ? styles.pointOpacityIn
-                : styles.pointOpacityOut) +
-              " absolute flex h-6 w-6 items-center justify-center rounded-full bg-white"
-            }
-          >
-            <div className="flex items-center justify-start">
-              <div
-                className={
-                  (isAnimateIn && !isAnimateOut
-                    ? styles.lineOpacityIn
-                    : styles.lineOpacityOut) +
-                  " absolute flex w-10 origin-left items-center justify-end border-y-4 border-dashed border-white sm:w-32"
-                }
-              >
+          {isAnimateIn && !isAnimateOut && (
+            <div
+              className={
+                styles.pointOpacityIn +
+                " absolute flex h-6 w-6 items-center justify-center rounded-full bg-white"
+              }
+            >
+              <div className="flex items-center justify-start">
                 <div
                   className={
-                    (isAnimateIn && !isAnimateOut
-                      ? styles.lineRotateIn
-                      : styles.lineRotateOut) +
-                    " absolute flex w-48 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-72"
+                    styles.lineOpacityIn +
+                    " absolute flex w-10 origin-left items-center justify-end border-y-4 border-dashed border-white sm:w-32"
                   }
                 >
-                  <div className="flex items-center justify-center">
-                    <div
-                      className={
-                        (isAnimateIn && !isAnimateOut
-                          ? styles.circleRotateIn
-                          : styles.circleRotateOut) +
-                        " absolute flex h-60 w-60 items-center justify-center rounded-full bg-lightgray p-7 text-center text-sm text-white sm:h-80 sm:w-80 sm:p-16 sm:text-base"
-                      }
-                    >
-                      <div className="flex flex-col items-center justify-center gap-6">
-                        <p>
-                          {
-                            [
-                              "The wide bonnet and low, aggressive stance hints at the SL's capabilities.",
-                              "You won't always see the quad exhaust tips, but you'll definitely hear their symphony.",
-                              "Red brake callipers draw your attention to the large cross-drilled rotors peering out behind the 21-inch wheels.",
-                              "The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery.",
-                            ][imageNum - 1]
-                          }
-                        </p>
-                        <p>PHOTO: sgCarMart</p>
+                  <div
+                    className={
+                      styles.lineRotateIn +
+                      " absolute flex w-48 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-72"
+                    }
+                  >
+                    <div className="flex items-center justify-center">
+                      <div
+                        className={
+                          styles.circleRotateIn +
+                          " absolute flex h-60 w-60 items-center justify-center rounded-full bg-lightgray p-7 text-center text-sm text-white sm:h-80 sm:w-80 sm:p-16 sm:text-base"
+                        }
+                      >
+                        <div className="flex flex-col items-center justify-center gap-6">
+                          <p>
+                            {
+                              [
+                                "The wide bonnet and low, aggressive stance hints at the SL's capabilities.",
+                                "You won't always see the quad exhaust tips, but you'll definitely hear their symphony.",
+                                "Red brake callipers draw your attention to the large cross-drilled rotors peering out behind the 21-inch wheels.",
+                                "The SL's dual-nature enables it to be a cruiser when you're chilling, or a bruiser when you're feeling fiery.",
+                              ][imageNum - 1]
+                            }
+                          </p>
+                          <p>PHOTO: sgCarMart</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

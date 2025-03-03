@@ -1,0 +1,90 @@
+.title1shape {
+  clip-path: polygon(0 0, calc(100% - 47px) 0, 100% 100%, 0 100%);
+}
+
+.title2shape {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 72px 100%);
+}
+
+.pointOpacityIn {
+  opacity: 1;
+  animation: pointOpacityIn 0.5s linear;
+}
+@keyframes pointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lineOpacityIn {
+  transform: rotate(45deg);
+  animation: lineOpacityIn 1s linear;
+}
+@keyframes lineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lineRotateIn {
+  transform: rotate(135deg) scale(1);
+  animation: lineRotateIn 2s linear;
+}
+@keyframes lineRotateIn {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1);
+  }
+}
+
+.circleRotateIn {
+  transform: rotate(-180deg);
+  animation: circleRotateIn 2s linear;
+}
+@keyframes circleRotateIn {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes circleRotateInSm {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .lineOpacityIn {
+    transform: rotate(0deg);
+  }
+
+  .circleRotateIn {
+    transform: rotate(-135deg);
+    animation: circleRotateInSm 2s linear;
+  }
+}

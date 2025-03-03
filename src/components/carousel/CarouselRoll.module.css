@@ -53,9 +53,6 @@
     opacity: 1;
   }
 }
-.pointOpacityOut {
-  opacity: 0;
-}
 
 .lineOpacityIn {
   animation: lineOpacityIn 2s linear;
@@ -70,9 +67,6 @@
   100% {
     opacity: 1;
   }
-}
-.lineOpacityOut {
-  opacity: 0;
 }
 
 .lineRotateIn {
@@ -101,9 +95,6 @@
     transform: rotate(120deg) scale(1);
   }
 }
-.lineRotateOut {
-  transform: rotate(0deg) scale(0);
-}
 
 .circleRotateIn {
   transform: rotate(-90deg);
@@ -130,9 +121,6 @@
   100% {
     transform: rotate(-120deg);
   }
-}
-.circleRotateOut {
-  transform: rotate(0deg);
 }
 
 @media (min-width: 1024px) {
