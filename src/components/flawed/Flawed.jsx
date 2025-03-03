@@ -34,7 +34,7 @@ const Flawed = () => {
   }, []);
 
   return (
-    <section className="relative bg-neutral-200 pt-20 sm:pt-48">
+    <section className="relative bg-neutral-200 pt-24 sm:pt-48">
       <div className="hidden sm:block">
         <CommonTitle2 content="The SL55 is not perfect. Its ergonomics could be better, its rear-wheel steering system further improved, and the boot should be bigger." />
       </div>
@@ -84,8 +84,8 @@ const Flawed = () => {
         <div
           className={
             isMiddle4a
-              ? "flawed-left-in grid grid-cols-2 gap-3 rounded-r-full bg-lightyellow"
-              : "flawed-left-out grid grid-cols-2 gap-3 rounded-r-full bg-lightyellow"
+              ? "flawed-left-in grid grid-cols-2 rounded-r-full bg-darkyellow"
+              : "flawed-left-out grid grid-cols-2 rounded-r-full bg-darkyellow"
           }
           ref={middle4aRef}
         >
@@ -97,9 +97,9 @@ const Flawed = () => {
           />
           <div className="flex items-center justify-start">
             <div className="flex flex-col items-end justify-center">
-              <h3 className="mb-3 text-3xl font-semibold text-white">
+              <h4 className="mb-3 text-2xl font-bold text-white">
                 What We Like
-              </h3>
+              </h4>
               {[
                 "Rapid Performance",
                 "Loud V8 and throaty exhaust",
@@ -113,7 +113,7 @@ const Flawed = () => {
                   className="flex items-center justify-center gap-3"
                 >
                   <h6 className="text-darkbrown">{item}</h6>
-                  <div className="h-3 w-3 rounded-full bg-darkyellow"></div>
+                  <div className="h-3 w-3 rounded-full bg-lightyellow"></div>
                 </div>
               ))}
             </div>
@@ -123,16 +123,16 @@ const Flawed = () => {
         <div
           className={
             isMiddle4b
-              ? "flawed-right-in grid grid-cols-2 gap-3 rounded-l-full bg-lightyellow"
-              : "flawed-right-out grid grid-cols-2 gap-3 rounded-l-full bg-lightyellow"
+              ? "flawed-right-in grid grid-cols-2 rounded-l-full bg-darkyellow"
+              : "flawed-right-out grid grid-cols-2 rounded-l-full bg-darkyellow"
           }
           ref={middle4bRef}
         >
           <div className="flex items-center justify-end">
             <div className="flex flex-col items-start justify-center">
-              <h3 className="mb-3 text-3xl font-semibold text-white">
+              <h4 className="mb-3 text-2xl font-bold text-white">
                 What We Dislike
-              </h3>
+              </h4>
               {[
                 "Ridiculous $1 million price tag",
                 "Non-existent rear-wheel",
@@ -144,7 +144,7 @@ const Flawed = () => {
                   key={idx}
                   className="flex items-center justify-center gap-3"
                 >
-                  <div className="h-3 w-3 rounded-full bg-darkyellow"></div>
+                  <div className="h-3 w-3 rounded-full bg-lightyellow"></div>
                   <h6 className="text-darkbrown">{item}</h6>
                 </div>
               ))}

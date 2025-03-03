@@ -6,7 +6,7 @@ const FlawedGreyCircleLeft = (props) => {
       <div
         className={
           styles.lineOpacityIn +
-          " absolute flex w-10 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-32"
+          " absolute z-30 flex w-10 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-32"
         }
       >
         <div

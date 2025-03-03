@@ -162,7 +162,7 @@ const TimeToDance = () => {
         />
       </div>
 
-      <div className="h-10 bg-darkgray"></div>
+      <div className="h-1 bg-darkgray sm:h-10"></div>
     </section>
   );
 };

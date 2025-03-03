@@ -15,7 +15,7 @@ const FlawedImageContainer = () => {
         <Modal src={src} alt={alt} text={text} setShowModal={setShowModal} />
       )}
 
-      <div className="flex -translate-x-8 flex-col items-center justify-center gap-72 sm:translate-x-0 sm:gap-[308px] xl:gap-28">
+      <div className="-mr-44 flex flex-col items-center justify-center gap-72 sm:mr-0 sm:translate-x-0 sm:gap-[308px] xl:gap-28">
         {[
           "SL comes with a 'free' IWC timepiece with a stopwatch feature for recording lap times.",
           "The SL 55 can adapt to your personal driving style — all you need to do is adjust these parameters.",
@@ -33,7 +33,7 @@ const FlawedImageContainer = () => {
         ))}
       </div>
 
-      <div className="absolute flex translate-x-8 flex-col items-center justify-center gap-72 pt-[292px] sm:relative sm:translate-x-0 sm:gap-[308px] sm:pt-36 xl:gap-28 xl:pt-0">
+      <div className="flex flex-col items-center justify-center gap-72 pt-[292px] sm:relative sm:translate-x-0 sm:gap-[308px] sm:pt-36 xl:gap-28 xl:pt-0">
         {[
           '"Full-fat" AMG models continue to have engines assembled by a single engineer, whose signature adorns the engine cover.',
           "We're not sure if the next SL will be available with a V8 or even an internal combustion engine, so savour this one while it's still around.",
