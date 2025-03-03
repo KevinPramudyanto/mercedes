@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import styles from "./Interior.module.css";
+import styles from "./Common.module.css";
 
-const InteriorTitle1 = () => {
+const CommonTitle1 = (props) => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
@@ -36,13 +36,13 @@ const InteriorTitle1 = () => {
     <h2
       className={
         styles.title1shape +
-        " absolute bottom-full left-0 w-[96%] bg-darkyellow py-8 pl-3 pr-24 text-right text-4xl font-semibold text-white opacity-90 sm:pr-40 lg:w-[72%] lg:pr-64"
+        " absolute bottom-full left-0 w-[96%] bg-darkyellow py-5 pl-3 pr-24 text-right text-4xl font-semibold text-white opacity-90 sm:pr-40 lg:w-[72%] lg:pr-64"
       }
       ref={triggerRef}
     >
-      Different interior approach
+      {props.content}
     </h2>
   );
 };
 
-export default InteriorTitle1;
+export default CommonTitle1;

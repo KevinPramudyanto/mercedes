@@ -7,7 +7,8 @@ const Interior = lazy(() => import("./components/interior/Interior.jsx"));
 const TimeToDance = lazy(
   () => import("./components/timeToDance/TimeToDance.jsx"),
 );
-const Flawed = lazy(() => import("./components/Flawed"));
+const Flawed = lazy(() => import("./components/flawed/Flawed.jsx"));
+const Footer = lazy(() => import("./components/footer/Footer.jsx"));
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Interior />
       <TimeToDance />
       <Flawed />
+      <Footer />
     </Suspense>
   );
 };

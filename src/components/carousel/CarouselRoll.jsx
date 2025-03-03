@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./CarouselRoll.module.css";
+import styles from "./Carousel.module.css";
 
 const CarouselRoll = () => {
   const [isAnimateIn, setIsAnimateIn] = useState(false);

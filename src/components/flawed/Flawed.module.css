@@ -1,0 +1,116 @@
+.pointOpacityIn {
+  opacity: 1;
+  animation: pointOpacityIn 0.5s linear;
+}
+@keyframes pointOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lineOpacityIn {
+  transform: rotate(0deg);
+  animation: lineOpacityIn 1s linear;
+}
+@keyframes lineOpacityIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.lineRotateCCW {
+  transform: rotate(-135deg) scale(1);
+  animation: lineRotateCCW 2s linear;
+}
+@keyframes lineRotateCCW {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(-135deg) scale(1);
+  }
+}
+
+.circleRotateCW {
+  transform: rotate(135deg);
+  animation: circleRotateCW 2s linear;
+}
+@keyframes circleRotateCW {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
+.lineRotateCW {
+  transform: rotate(135deg) scale(1);
+  animation: lineRotateCW 2s linear;
+}
+@keyframes lineRotateCW {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  50% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(135deg) scale(1);
+  }
+}
+
+.circleRotateCCW {
+  transform: rotate(-135deg);
+  animation: circleRotateCCW 2s linear;
+}
+@keyframes circleRotateCCW {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .lineRotateCCW {
+    transform: rotate(135deg) scale(1);
+    animation: lineRotateCW 2s linear;
+  }
+
+  .circleRotateCW {
+    transform: rotate(-135deg);
+    animation: circleRotateCCW 2s linear;
+  }
+}
+
+@media (min-width: 1280px) {
+  .lineRotateCCW {
+    transform: rotate(-135deg) scale(1);
+    animation: lineRotateCCW 2s linear;
+  }
+
+  .circleRotateCW {
+    transform: rotate(135deg);
+    animation: circleRotateCW 2s linear;
+  }
+}

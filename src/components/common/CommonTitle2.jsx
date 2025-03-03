@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import styles from "./Interior.module.css";
+import styles from "./Common.module.css";
 
-const InteriorTitle2 = () => {
+const CommonTitle2 = (props) => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
@@ -40,13 +40,9 @@ const InteriorTitle2 = () => {
       }
       ref={triggerRef}
     >
-      <div className="max-w-4xl">
-        Modern Mercedes models have interiors designed to elicit wows from the
-        moment you lay eyes on the cockpit, but the SL is going with a
-        'hyperanalogue' approach.
-      </div>
+      <div className="max-w-4xl">{props.content}</div>
     </h6>
   );
 };
 
-export default InteriorTitle2;
+export default CommonTitle2;

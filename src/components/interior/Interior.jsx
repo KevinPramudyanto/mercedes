@@ -1,14 +1,14 @@
 import InteriorContainer from "./InteriorContainer.jsx";
-import InteriorTitle2 from "./InteriorTitle2.jsx";
-import InteriorTitle1 from "./InteriorTitle1.jsx";
+import CommonTitle2 from "../common/CommonTitle2.jsx";
+import CommonTitle1 from "../common/CommonTitle1.jsx";
 import InteriorContent from "./InteriorContent.jsx";
 
 const Interior = () => {
   return (
     <>
       <InteriorContainer src="parallax_interior1.png" alt="Parallax Interior 1">
-        <InteriorTitle2 />
-        <InteriorTitle1 />
+        <CommonTitle2 content="Modern Mercedes models have interiors designed to elicit wows from the moment you lay eyes on the cockpit, but the SL is going with a 'hyperanalogue' approach." />
+        <CommonTitle1 content="Different interior approach" />
         <InteriorContent
           content1="Yes, there are still screens. But instead of the usual MBUX (Mercedes-Benz User Experience) setup, the 12.3-inch instrument panel is housed under a cowl, reflecting the SL's sporty roots."
           content2="Dominating the dashboard is the tablet-like 11.9-inch infotainment display, whose tilt angle can be adjusted from 12 degrees to 32 degrees at a touch of a button. It helps minimise screen glare when driving with the top down."
