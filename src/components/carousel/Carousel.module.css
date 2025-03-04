@@ -70,7 +70,7 @@
 }
 
 .lineRotateIn {
-  transform: rotate(90deg) scale(1);
+  transform: rotate(-90deg) scale(1);
   animation: lineRotateIn 3s linear;
 }
 @keyframes lineRotateIn {
@@ -81,7 +81,18 @@
     transform: rotate(0deg) scale(0);
   }
   100% {
-    transform: rotate(90deg) scale(1);
+    transform: rotate(-90deg) scale(1);
+  }
+}
+@keyframes lineRotateInSm {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(105deg) scale(1);
   }
 }
 @keyframes lineRotateInLg {
@@ -97,7 +108,7 @@
 }
 
 .circleRotateIn {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   animation: circleRotateIn 3s linear;
 }
 @keyframes circleRotateIn {
@@ -108,7 +119,18 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes circleRotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-105deg);
   }
 }
 @keyframes circleRotateInLg {
@@ -120,6 +142,18 @@
   }
   100% {
     transform: rotate(-120deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .lineRotateIn {
+    transform: rotate(105deg) scale(1);
+    animation: lineRotateInSm 3s linear;
+  }
+
+  .circleRotateIn {
+    transform: rotate(-105deg);
+    animation: circleRotateInSm 3s linear;
   }
 }
 

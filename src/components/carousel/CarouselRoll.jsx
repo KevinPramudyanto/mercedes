@@ -82,20 +82,20 @@ const CarouselRoll = () => {
             <div
               className={
                 styles.pointOpacityIn +
-                " absolute flex h-6 w-6 items-center justify-center rounded-full bg-white"
+                " absolute flex h-6 w-6 -translate-x-24 -translate-y-8 items-center justify-center rounded-full bg-white sm:translate-x-0 sm:translate-y-0"
               }
             >
-              <div className="flex items-center justify-start">
+              <div className="flex flex-col items-center justify-end sm:flex-row sm:justify-start">
                 <div
                   className={
                     styles.lineOpacityIn +
-                    " absolute flex w-10 origin-left items-center justify-end border-y-4 border-dashed border-white sm:w-32"
+                    " absolute flex h-36 w-0 origin-bottom flex-col items-center justify-start border-x-4 border-dashed border-white sm:h-0 sm:w-20 sm:origin-left sm:flex-row sm:justify-end sm:border-y-4 lg:w-32"
                   }
                 >
                   <div
                     className={
                       styles.lineRotateIn +
-                      " absolute flex w-48 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-72"
+                      " absolute flex h-36 w-0 origin-top flex-col items-center justify-end border-x-4 border-dashed border-white sm:h-0 sm:w-60 sm:origin-right sm:flex-row sm:justify-start sm:border-y-4 lg:w-72"
                     }
                   >
                     <div className="flex items-center justify-center">

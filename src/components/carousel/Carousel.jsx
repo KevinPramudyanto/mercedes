@@ -19,7 +19,7 @@ const Carousel = () => {
         </h6>
       </div>
 
-      <div className="mx-auto mb-56 max-w-6xl px-16 text-white">
+      <div className="mx-auto mb-40 max-w-6xl px-16 text-white">
         <p className="mb-9">
           The iconic SL has been transformed from 'super-light' to 'superb
           luxurious', and in SL55 form, packs plenty of firepower, too.
