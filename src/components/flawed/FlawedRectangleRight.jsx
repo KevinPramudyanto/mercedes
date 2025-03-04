@@ -57,7 +57,6 @@ const FlawedRectangleRight = () => {
       </div>
       <div className="ml-20 flex items-center justify-end sm:ml-0">
         <img
-          className=""
           src="footer_right_what_we_dislike.png"
           alt="Footer Right What We Dislike"
           loading="lazy"

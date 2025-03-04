@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import Fallback from "./components/fallback/Fallback.jsx";
 const Menu = lazy(() => import("./components/menu/Menu.jsx"));
 const Header = lazy(() => import("./components/header/Header.jsx"));
 const Carousel = lazy(() => import("./components/carousel/Carousel.jsx"));
@@ -12,7 +13,7 @@ const Footer = lazy(() => import("./components/footer/Footer.jsx"));
 
 const App = () => {
   return (
-    <Suspense fallback={<p>Loading...</p>}>
+    <Suspense fallback={<Fallback />}>
       <Menu />
       <Header />
       <Carousel />

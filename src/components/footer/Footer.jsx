@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-neutral-200 pt-10 sm:pt-12">
+    <footer className="bg-neutral-200 pt-10 sm:pt-12">
       <div className="px-0 sm:px-12">
         <img
           className="mx-auto"
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 
 const OverLay = (props) => {
   return (
-    <div className="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center backdrop-blur-3xl">
+    <section className="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center backdrop-blur-3xl">
       <div className="max-w-96 bg-darkgray p-2">
         <div className="flex items-center justify-end">
           <div
@@ -21,7 +21,7 @@ const OverLay = (props) => {
         <h4 className="text-base text-white">{props.text}</h4>
         <h6 className="mt-3 text-sm text-lightyellow">sgCarMart</h6>
       </div>
-    </div>
+    </section>
   );
 };
 
