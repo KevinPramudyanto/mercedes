@@ -36,7 +36,7 @@ const CommonTitle1 = (props) => {
     <h2
       className={
         styles.title1shape +
-        " absolute bottom-full left-0 w-[96%] bg-darkyellow py-5 pl-3 pr-24 text-right text-4xl font-semibold text-white opacity-90 sm:pr-40 lg:w-[72%] lg:pr-64"
+        " absolute bottom-full left-0 w-[96%] bg-darkyellow py-5 pl-3 pr-24 text-right text-4xl font-semibold text-white sm:pr-40 lg:w-[72%] lg:pr-64"
       }
       ref={triggerRef}
     >

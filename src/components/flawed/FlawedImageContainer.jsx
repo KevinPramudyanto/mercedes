@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./Modal.jsx";
 import FlawedImageLeft from "./FlawedImageLeft.jsx";
 import FlawedImageRight from "./FlawedImageRight.jsx";
@@ -8,6 +8,18 @@ const FlawedImageContainer = () => {
   const [alt, setAlt] = useState("");
   const [text, setText] = useState("");
   const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    if (showModal) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [showModal]);
 
   return (
     <div className="mx-auto flex max-w-5xl items-start justify-center px-0 sm:gap-0 sm:px-10 xl:gap-20 xl:px-32">

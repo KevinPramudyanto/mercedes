@@ -2,7 +2,7 @@ import ReactDOM from "react-dom";
 
 const OverLay = (props) => {
   return (
-    <div className="fixed left-0 top-0 z-50 h-screen w-full bg-darkgray opacity-95">
+    <div className="fixed left-0 top-0 z-50 h-screen w-full bg-darkgray">
       <div className="flex items-center justify-end">
         <div
           className="p-5 text-6xl text-white hover:cursor-pointer"

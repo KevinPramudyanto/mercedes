@@ -1,38 +1,10 @@
-import { useEffect, useRef, useState } from "react";
 import CommonTitle1 from "../common/CommonTitle1.jsx";
 import CommonTitle2 from "../common/CommonTitle2.jsx";
 import FlawedImageContainer from "./FlawedImageContainer.jsx";
+import FlawedRectangleLeft from "./FlawedRectangleLeft.jsx";
+import FlawedRectangleRight from "./FlawedRectangleRight.jsx";
 
 const Flawed = () => {
-  const [isMiddle4a, setIsMiddle4a] = useState(false);
-  const [isMiddle4b, setIsMiddle4b] = useState(false);
-  const middle4aRef = useRef(null);
-  const middle4bRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (middle4aRef.current) {
-        setIsMiddle4a(
-          middle4aRef.current.getBoundingClientRect().top +
-            middle4aRef.current.offsetHeight / 2 <=
-            window.innerHeight,
-        );
-      }
-      if (middle4bRef.current) {
-        setIsMiddle4b(
-          middle4bRef.current.getBoundingClientRect().top +
-            middle4bRef.current.offsetHeight / 2 <=
-            window.innerHeight,
-        );
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <section className="relative bg-neutral-200 pt-24 sm:pt-48">
       <div className="hidden sm:block">
@@ -80,82 +52,13 @@ const Flawed = () => {
 
       <FlawedImageContainer />
 
-      <div className="mt-12 grid grid-cols-2 gap-3">
-        <div
-          className={
-            isMiddle4a
-              ? "flawed-left-in grid grid-cols-2 rounded-r-full bg-darkyellow"
-              : "flawed-left-out grid grid-cols-2 rounded-r-full bg-darkyellow"
-          }
-          ref={middle4aRef}
-        >
-          <img
-            className=""
-            src="footer_left_what_we_like.png"
-            alt="Footer Left What We Like"
-            loading="lazy"
-          />
-          <div className="flex items-center justify-start">
-            <div className="flex flex-col items-end justify-center">
-              <h4 className="mb-3 text-2xl font-bold text-white">
-                What We Like
-              </h4>
-              {[
-                "Rapid Performance",
-                "Loud V8 and throaty exhaust",
-                "Pliant ride",
-                "Cruising ability",
-                "Might be the last SL with a V8",
-                "Still feels special",
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-center gap-3"
-                >
-                  <h6 className="text-darkbrown">{item}</h6>
-                  <div className="h-3 w-3 rounded-full bg-lightyellow"></div>
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className="mt-6 grid grid-cols-1 sm:mt-44 xl:mt-28 xl:grid-cols-2">
+        <div className="flex items-center justify-start pr-3">
+          <FlawedRectangleLeft />
         </div>
 
-        <div
-          className={
-            isMiddle4b
-              ? "flawed-right-in grid grid-cols-2 rounded-l-full bg-darkyellow"
-              : "flawed-right-out grid grid-cols-2 rounded-l-full bg-darkyellow"
-          }
-          ref={middle4bRef}
-        >
-          <div className="flex items-center justify-end">
-            <div className="flex flex-col items-start justify-center">
-              <h4 className="mb-3 text-2xl font-bold text-white">
-                What We Dislike
-              </h4>
-              {[
-                "Ridiculous $1 million price tag",
-                "Non-existent rear-wheel",
-                "steering",
-                "No soft-closing doors",
-                "Seriously overpriced",
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="flex items-center justify-center gap-3"
-                >
-                  <div className="h-3 w-3 rounded-full bg-lightyellow"></div>
-                  <h6 className="text-darkbrown">{item}</h6>
-                </div>
-              ))}
-            </div>
-          </div>
-          <img
-            className=""
-            src="footer_right_what_we_dislike.png"
-            alt="Footer Right What We Dislike"
-            loading="lazy"
-          />
+        <div className="-mt-32 flex items-center justify-end pl-3 sm:-mt-9 xl:mt-0">
+          <FlawedRectangleRight />
         </div>
       </div>
     </section>

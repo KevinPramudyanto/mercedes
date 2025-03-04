@@ -23,10 +23,7 @@ const FlawedImageLeft = (props) => {
         const translate = Math.floor(((progress - 1) * window.innerWidth) / 2);
         triggerRef.current.style.transform = "translateX(" + translate + "px)";
 
-        setIsAnimate(
-          triggerRef.current.getBoundingClientRect().top <=
-            window.innerHeight / 2,
-        );
+        setIsAnimate(progress >= 1);
       }
     };
 
