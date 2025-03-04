@@ -8,7 +8,11 @@ const Menu = () => {
   return (
     <div className="fixed right-0 top-0 z-40 flex flex-row-reverse items-center justify-center gap-1 opacity-80 sm:right-7 sm:flex-col">
       <div className="flex h-[66px] w-[66px] items-center justify-center bg-lightgray">
-        <img src="nav-hamburger.svg" alt="Nav Hamburger" loading="lazy" />
+        <img
+          src="/images/nav-hamburger.svg"
+          alt="Nav Hamburger"
+          loading="lazy"
+        />
       </div>
 
       <nav className="flex min-h-[66px] min-w-[66px] items-center justify-center rounded-l-full bg-lightgray sm:rounded-b-full sm:rounded-tl-none">
@@ -22,7 +26,7 @@ const Menu = () => {
               >
                 <img
                   className="invert"
-                  src="nav-whatsapp.svg"
+                  src="/images/nav-whatsapp.svg"
                   alt="Nav Whatsapp"
                   loading="lazy"
                 />
@@ -35,7 +39,7 @@ const Menu = () => {
               >
                 <img
                   className="invert"
-                  src="nav-instagram.svg"
+                  src="/images/nav-instagram.svg"
                   alt="Nav Instagram"
                   loading="lazy"
                 />
@@ -48,7 +52,7 @@ const Menu = () => {
               >
                 <img
                   className="invert"
-                  src="nav-telegram.svg"
+                  src="/images/nav-telegram.svg"
                   alt="Nav Telegram"
                   loading="lazy"
                 />
@@ -61,7 +65,7 @@ const Menu = () => {
               >
                 <img
                   className="invert"
-                  src="nav-facebook.svg"
+                  src="/images/nav-facebook.svg"
                   alt="Nav Facebook"
                   loading="lazy"
                 />
@@ -74,7 +78,7 @@ const Menu = () => {
               >
                 <img
                   className="invert"
-                  src="nav-twitter.svg"
+                  src="/images/nav-twitter.svg"
                   alt="Nav Twitter"
                   loading="lazy"
                 />
@@ -83,7 +87,7 @@ const Menu = () => {
 
             <img
               className="rotate-90 p-3 hover:cursor-pointer sm:rotate-0"
-              src="nav-arrow-up.svg"
+              src="/images/nav-arrow-up.svg"
               alt="Nav Arrow Up"
               loading="lazy"
               onClick={handleClick}
@@ -92,7 +96,7 @@ const Menu = () => {
         ) : (
           <img
             className="hover:cursor-pointer"
-            src="nav-share.svg"
+            src="/images/nav-share.svg"
             alt="Nav Share"
             loading="lazy"
             onClick={handleClick}

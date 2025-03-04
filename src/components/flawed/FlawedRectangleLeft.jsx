@@ -38,7 +38,7 @@ const FlawedRectangleLeft = () => {
     >
       <div className="mr-20 flex items-center justify-start sm:mr-0">
         <img
-          src="footer_left_what_we_like.png"
+          src="/images/footer_left_what_we_like.png"
           alt="Footer Left What We Like"
           loading="lazy"
         />

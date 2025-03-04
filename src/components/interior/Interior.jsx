@@ -6,7 +6,10 @@ import InteriorContent from "./InteriorContent.jsx";
 const Interior = () => {
   return (
     <>
-      <InteriorContainer src="parallax_interior1.png" alt="Parallax Interior 1">
+      <InteriorContainer
+        src="/images/parallax_interior1.png"
+        alt="Parallax Interior 1"
+      >
         <CommonTitle2 content="Modern Mercedes models have interiors designed to elicit wows from the moment you lay eyes on the cockpit, but the SL is going with a 'hyperanalogue' approach." />
         <CommonTitle1 content="Different interior approach" />
         <InteriorContent
@@ -16,7 +19,10 @@ const Interior = () => {
         />
       </InteriorContainer>
 
-      <InteriorContainer src="parallax_interior2.png" alt="Parallax Interior 2">
+      <InteriorContainer
+        src="/images/parallax_interior2.png"
+        alt="Parallax Interior 2"
+      >
         <InteriorContent
           content1="For the first time in the SL's history, the car has rear seats. They can supposedly accommodate occupants up to 1.5m tall, but the backrests are so upright they seem like they are canted forward."
           content2="Also, strangely absent on the test unit are soft-close doors and 'pushers' that bring the seat belts closer to the front passengers."

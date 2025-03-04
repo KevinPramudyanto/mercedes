@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="px-0 sm:px-12">
         <img
           className="mx-auto"
-          src="bottom_advertisment.png"
+          src="/images/bottom_advertisment.png"
           alt="Bottom Advertisment"
           loading="lazy"
         />
@@ -19,13 +19,13 @@ const Footer = () => {
               <div className="bg-[#200000] px-3 py-3 lg:px-6 lg:py-6 xl:px-10 xl:py-10">
                 <img
                   className="m-auto block sm:hidden"
-                  src="asiaone_footer_mobile.png"
+                  src="/images/asiaone_footer_mobile.png"
                   alt="Asiaone Footer Mobile"
                   loading="lazy"
                 />
                 <img
                   className="m-auto hidden sm:block"
-                  src="asiaone_footer_desktop.png"
+                  src="/images/asiaone_footer_desktop.png"
                   alt="Asiaone Footer Desktop"
                   loading="lazy"
                 />

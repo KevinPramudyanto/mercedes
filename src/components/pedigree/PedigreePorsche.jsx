@@ -51,7 +51,7 @@ const PedigreePorsche = () => {
       >
         <img
           className="w-full"
-          src="pedigree_porsche.png"
+          src="/images/pedigree_porsche.png"
           alt="Pedigree Porsche"
           loading="lazy"
         />

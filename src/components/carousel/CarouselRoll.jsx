@@ -45,19 +45,19 @@ const CarouselRoll = () => {
           <div className="flex items-center justify-center gap-4">
             <img
               className="hover:cursor-pointer"
-              src="carousel-arrow-left.svg"
+              src="/images/carousel-arrow-left.svg"
               alt="Carousel Arrow Left"
               loading="lazy"
               onClick={() => setImageNum((prev) => (prev === 1 ? 4 : prev - 1))}
             />
             <img
-              src={"carousel-" + imageNum + ".png"}
+              src={"/images/carousel-" + imageNum + ".png"}
               alt={"Carousel " + imageNum}
               loading="lazy"
             />
             <img
               className="hover:cursor-pointer"
-              src="carousel-arrow-right.svg"
+              src="/images/carousel-arrow-right.svg"
               alt="Carousel Arrow Right"
               loading="lazy"
               onClick={() => setImageNum((prev) => (prev === 4 ? 1 : prev + 1))}

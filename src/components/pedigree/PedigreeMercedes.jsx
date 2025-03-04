@@ -49,7 +49,7 @@ const PedigreeMercedes = () => {
       >
         <img
           className="w-full"
-          src="pedigree_mercedes_benz_sl.png"
+          src="/images/pedigree_mercedes_benz_sl.png"
           alt="Pedigree Mercedes Benz SL"
           loading="lazy"
         />

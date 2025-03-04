@@ -156,7 +156,7 @@ const TimeToDance = () => {
         <img
           className="w-[220px] opacity-80 lg:w-[410px]"
           ref={progressCarRef}
-          src="progress.png"
+          src="/images/progress.png"
           alt="Progress"
           loading="lazy"
         />

@@ -38,11 +38,11 @@ const FlawedImageRight = (props) => {
       <img
         className="rounded-full border-8 border-neutral-200 hover:cursor-pointer hover:border-darkyellow"
         ref={triggerRef}
-        src={"Flawed_right" + (props.idx + 1) + ".png"}
+        src={"/images/Flawed_right" + (props.idx + 1) + ".png"}
         alt={"Flawed Right " + (props.idx + 1)}
         loading="lazy"
         onClick={() => {
-          props.setSrc("Flawed_right" + (props.idx + 1) + ".png");
+          props.setSrc("/images/Flawed_right" + (props.idx + 1) + ".png");
           props.setAlt("Flawed Right " + (props.idx + 1));
           props.setText(props.text);
           props.setShowModal(true);
