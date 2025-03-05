@@ -6,6 +6,8 @@ const InteriorContent = (props) => {
   const animateTriggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the animation when the element is scrolled into view
+
     const handleInteriorContentScroll = () => {
       if (animateTriggerRef.current) {
         setIsAnimate(

@@ -9,12 +9,14 @@ const Header = () => {
           src="/images/masthead_back_img.jpg"
           alt="Masthead Back"
           loading="lazy"
+          decoding="async"
         />
         <img
           className="block h-screen w-screen object-cover object-bottom sm:hidden"
           src="/images/mobile_masthead_back_img.jpg"
           alt="Mobile Masthead Back"
           loading="lazy"
+          decoding="async"
         />
         <div className="absolute flex h-[130%] w-[130%] items-center justify-center sm:h-[110%] sm:w-[110%]">
           <img
@@ -22,12 +24,14 @@ const Header = () => {
             src="/images/masthead_ring.svg"
             alt="Masthead Ring"
             loading="lazy"
+            decoding="async"
           />
           <img
             className={styles.rotate + " absolute object-cover"}
             src="/images/masthead_ring_rotate.svg"
             alt="Masthead Ring Rotate"
             loading="lazy"
+            decoding="async"
           />
         </div>
         <img
@@ -35,12 +39,14 @@ const Header = () => {
           src="/images/masthead_fore_img.png"
           alt="Masthead Fore"
           loading="lazy"
+          decoding="async"
         />
         <img
           className="absolute block h-screen w-screen object-cover object-bottom sm:hidden"
           src="/images/mobile_masthead_fore_img.png"
           alt="Mobile Masthead Fore"
           loading="lazy"
+          decoding="async"
         />
         <h1 className="absolute w-full px-5 pt-20 text-center text-[40px] font-bold text-darkgray opacity-80 lg:text-[55px]">
           Mercedes-Benz SL55 AMG
@@ -56,6 +62,7 @@ const Header = () => {
             src="/images/main-arrow-down.svg"
             alt="Main Arrow Down"
             loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

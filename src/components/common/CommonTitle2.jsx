@@ -5,6 +5,8 @@ const CommonTitle2 = (props) => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the translation when the element is scrolled into view
+
     const handleTitle2Scroll = () => {
       if (triggerRef.current) {
         let progress =

@@ -6,6 +6,8 @@ const TimeToDance = () => {
   const progressBarRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the translation when the element is scrolled into view
+
     const handleProgressScroll = () => {
       if (
         startRef.current &&
@@ -162,6 +164,7 @@ const TimeToDance = () => {
           src="/images/progress.png"
           alt="Progress"
           loading="lazy"
+          decoding="async"
         />
       </div>
 

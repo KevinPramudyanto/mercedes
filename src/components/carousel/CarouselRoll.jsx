@@ -8,6 +8,8 @@ const CarouselRoll = () => {
   const animateTriggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the animation when the element is scrolled into view
+
     const handleCarouselScroll = () => {
       if (animateTriggerRef.current) {
         setIsAnimateIn(
@@ -48,25 +50,28 @@ const CarouselRoll = () => {
               src="/images/carousel-arrow-left.svg"
               alt="Carousel Arrow Left"
               loading="lazy"
+              decoding="async"
               onClick={() => setImageNum((prev) => (prev === 1 ? 4 : prev - 1))}
             />
             <img
               src={"/images/carousel-" + imageNum + ".png"}
               alt={"Carousel " + imageNum}
               loading="lazy"
+              decoding="async"
             />
             <img
               className="hover:cursor-pointer"
               src="/images/carousel-arrow-right.svg"
               alt="Carousel Arrow Right"
               loading="lazy"
+              decoding="async"
               onClick={() => setImageNum((prev) => (prev === 4 ? 1 : prev + 1))}
             />
           </div>
 
           <div className="m-3 flex items-center justify-center gap-3">
             {[1, 2, 3, 4].map((num) => (
-              <div
+              <button
                 key={num}
                 className={
                   num === imageNum
@@ -74,7 +79,7 @@ const CarouselRoll = () => {
                     : "h-3 w-3 rounded-full bg-white hover:cursor-pointer hover:bg-lightyellow"
                 }
                 onClick={() => setImageNum(num)}
-              ></div>
+              ></button>
             ))}
           </div>
 

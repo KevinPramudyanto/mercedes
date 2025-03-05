@@ -8,6 +8,8 @@ const FlawedImageRight = (props) => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the translation and animation when the element is scrolled into view
+
     const handleImageRightScroll = () => {
       if (triggerRef.current) {
         let progress =
@@ -41,6 +43,7 @@ const FlawedImageRight = (props) => {
         src={"/images/Flawed_right" + (props.idx + 1) + ".png"}
         alt={"Flawed Right " + (props.idx + 1)}
         loading="lazy"
+        decoding="async"
         onClick={() => {
           props.setSrc("/images/Flawed_right" + (props.idx + 1) + ".png");
           props.setAlt("Flawed Right " + (props.idx + 1));

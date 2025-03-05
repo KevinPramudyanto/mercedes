@@ -4,6 +4,8 @@ const FlawedRectangleLeft = () => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the translation when the element is scrolled into view
+
     const handleRectangleLeftScroll = () => {
       if (triggerRef.current) {
         let progress =
@@ -41,6 +43,7 @@ const FlawedRectangleLeft = () => {
           src="/images/footer_left_what_we_like.png"
           alt="Footer Left What We Like"
           loading="lazy"
+          decoding="async"
         />
       </div>
       <div className="mr-16 flex items-center justify-start sm:mr-0">

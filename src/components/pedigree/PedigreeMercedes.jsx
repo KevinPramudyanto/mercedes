@@ -6,6 +6,8 @@ const PedigreeMercedes = () => {
   const animateTriggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the animation when the element is scrolled into view
+
     const handleMercedesScroll = () => {
       if (animateTriggerRef.current) {
         setIsAnimate(
@@ -52,6 +54,7 @@ const PedigreeMercedes = () => {
           src="/images/pedigree_mercedes_benz_sl.png"
           alt="Pedigree Mercedes Benz SL"
           loading="lazy"
+          decoding="async"
         />
         <h5 className="absolute right-[25%] top-[5%] w-full rounded-r-full bg-darkyellow py-3 pr-3 text-right text-sm text-white sm:text-base">
           Mercedes-Benz SL

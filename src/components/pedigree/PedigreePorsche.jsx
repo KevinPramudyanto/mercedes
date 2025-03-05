@@ -6,6 +6,8 @@ const PedigreePorsche = () => {
   const animateTriggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the animation when the element is scrolled into view
+
     const handlePorscheScroll = () => {
       if (animateTriggerRef.current) {
         setIsAnimate(
@@ -54,6 +56,7 @@ const PedigreePorsche = () => {
           src="/images/pedigree_porsche.png"
           alt="Pedigree Porsche"
           loading="lazy"
+          decoding="async"
         />
         <h5 className="absolute left-[30%] top-[5%] w-full rounded-l-full bg-darkyellow py-3 pl-6 text-white lg:pl-9">
           Porsche 911

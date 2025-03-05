@@ -4,6 +4,8 @@ const FlawedRectangleRight = () => {
   const triggerRef = useRef(null);
 
   useEffect(() => {
+    // Trigger the translation when the element is scrolled into view
+
     const handleRectangleRightScroll = () => {
       if (triggerRef.current) {
         let progress =
@@ -60,6 +62,7 @@ const FlawedRectangleRight = () => {
           src="/images/footer_right_what_we_dislike.png"
           alt="Footer Right What We Dislike"
           loading="lazy"
+          decoding="async"
         />
       </div>
     </div>

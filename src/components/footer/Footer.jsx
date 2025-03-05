@@ -9,6 +9,7 @@ const Footer = () => {
           src="/images/bottom_advertisment.png"
           alt="Bottom Advertisment"
           loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -22,12 +23,14 @@ const Footer = () => {
                   src="/images/asiaone_footer_mobile.png"
                   alt="Asiaone Footer Mobile"
                   loading="lazy"
+                  decoding="async"
                 />
                 <img
                   className="m-auto hidden sm:block"
                   src="/images/asiaone_footer_desktop.png"
                   alt="Asiaone Footer Desktop"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             </div>

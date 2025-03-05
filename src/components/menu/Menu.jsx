@@ -12,6 +12,7 @@ const Menu = () => {
           src="/images/nav-hamburger.svg"
           alt="Nav Hamburger"
           loading="lazy"
+          decoding="async"
         />
       </div>
 
@@ -29,6 +30,7 @@ const Menu = () => {
                   src="/images/nav-whatsapp.svg"
                   alt="Nav Whatsapp"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
@@ -42,6 +44,7 @@ const Menu = () => {
                   src="/images/nav-instagram.svg"
                   alt="Nav Instagram"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
@@ -55,6 +58,7 @@ const Menu = () => {
                   src="/images/nav-telegram.svg"
                   alt="Nav Telegram"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
@@ -68,6 +72,7 @@ const Menu = () => {
                   src="/images/nav-facebook.svg"
                   alt="Nav Facebook"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
 
@@ -81,6 +86,7 @@ const Menu = () => {
                   src="/images/nav-twitter.svg"
                   alt="Nav Twitter"
                   loading="lazy"
+                  decoding="async"
                 />
               </a>
             </div>
@@ -90,6 +96,7 @@ const Menu = () => {
               src="/images/nav-arrow-up.svg"
               alt="Nav Arrow Up"
               loading="lazy"
+              decoding="async"
               onClick={handleClick}
             />
           </div>
@@ -99,6 +106,7 @@ const Menu = () => {
             src="/images/nav-share.svg"
             alt="Nav Share"
             loading="lazy"
+            decoding="async"
             onClick={handleClick}
           />
         )}
