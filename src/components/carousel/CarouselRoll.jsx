@@ -31,7 +31,7 @@ const CarouselRoll = () => {
 
   return (
     <div
-      className="mb-36 flex items-center justify-center px-10 sm:mb-20"
+      className="mb-16 mt-36 flex items-center justify-center px-10 lg:mb-40 lg:mt-40"
       ref={animateTriggerRef}
     >
       <div
@@ -85,23 +85,59 @@ const CarouselRoll = () => {
                 " absolute flex h-6 w-6 -translate-x-24 -translate-y-8 items-center justify-center rounded-full bg-white sm:translate-x-0 sm:translate-y-0"
               }
             >
-              <div className="flex flex-col items-center justify-end sm:flex-row sm:justify-start">
+              <div
+                className={
+                  "flex flex-col items-center justify-end sm:flex-row sm:justify-start " +
+                  [
+                    "lg:justify-start",
+                    "lg:justify-end",
+                    "lg:justify-end",
+                    "lg:justify-start",
+                  ][imageNum - 1]
+                }
+              >
                 <div
                   className={
                     styles.lineOpacityIn +
-                    " absolute flex h-36 w-0 origin-bottom flex-col items-center justify-start border-x-4 border-dashed border-white sm:h-0 sm:w-20 sm:origin-left sm:flex-row sm:justify-end sm:border-y-4 lg:w-32"
+                    " absolute flex h-36 w-0 origin-bottom flex-col items-center justify-start border-x-4 border-dashed border-white sm:h-0 sm:w-20 sm:origin-left sm:flex-row sm:justify-end sm:border-y-4 lg:w-32" +
+                    [
+                      " lg:origin-left lg:justify-end",
+                      " lg:origin-right lg:justify-start",
+                      " lg:origin-right lg:justify-start",
+                      " lg:origin-left lg:justify-end",
+                    ][imageNum - 1]
                   }
                 >
                   <div
                     className={
-                      styles.lineRotateIn +
-                      " absolute flex h-36 w-0 origin-top flex-col items-center justify-end border-x-4 border-dashed border-white sm:h-0 sm:w-60 sm:origin-right sm:flex-row sm:justify-start sm:border-y-4 lg:w-72"
+                      styles[
+                        [
+                          "lineRotate1And2",
+                          "lineRotate1And2",
+                          "lineRotate3And4",
+                          "lineRotate3And4",
+                        ][imageNum - 1]
+                      ] +
+                      " absolute flex h-36 w-0 origin-top flex-col items-center justify-end border-x-4 border-dashed border-white sm:h-0 sm:w-60 sm:origin-right sm:flex-row sm:justify-start sm:border-y-4 lg:w-72" +
+                      [
+                        " lg:origin-right lg:justify-start",
+                        " lg:origin-left lg:justify-end",
+                        " lg:origin-left lg:justify-end",
+                        " lg:origin-right lg:justify-start",
+                      ][imageNum - 1]
                     }
                   >
                     <div className="flex items-center justify-center">
                       <div
                         className={
-                          styles.circleRotateIn +
+                          styles[
+                            [
+                              "circleRotate1And2",
+                              "circleRotate1And2",
+                              "circleRotate3And4",
+                              "circleRotate3And4",
+                            ][imageNum - 1]
+                          ] +
                           " absolute flex h-60 w-60 items-center justify-center rounded-full bg-lightgray p-7 text-center text-sm text-white sm:h-80 sm:w-80 sm:p-16 sm:text-base"
                         }
                       >

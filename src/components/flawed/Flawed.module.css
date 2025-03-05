@@ -27,7 +27,7 @@
   }
 }
 
-.lineRotateCCW {
+.lineRotateLeft {
   transform: rotate(-135deg) scale(1);
   animation: lineRotateCCW 2s linear;
 }
@@ -43,7 +43,7 @@
   }
 }
 
-.circleRotateCW {
+.circleRotateLeft {
   transform: rotate(135deg);
   animation: circleRotateCW 2s linear;
 }
@@ -59,7 +59,7 @@
   }
 }
 
-.lineRotateCW {
+.lineRotateRight {
   transform: rotate(135deg) scale(1);
   animation: lineRotateCW 2s linear;
 }
@@ -75,7 +75,7 @@
   }
 }
 
-.circleRotateCCW {
+.circleRotateRight {
   transform: rotate(-135deg);
   animation: circleRotateCCW 2s linear;
 }
@@ -92,24 +92,24 @@
 }
 
 @media (min-width: 640px) {
-  .lineRotateCCW {
+  .lineRotateLeft {
     transform: rotate(135deg) scale(1);
     animation: lineRotateCW 2s linear;
   }
 
-  .circleRotateCW {
+  .circleRotateLeft {
     transform: rotate(-135deg);
     animation: circleRotateCCW 2s linear;
   }
 }
 
 @media (min-width: 1280px) {
-  .lineRotateCCW {
+  .lineRotateLeft {
     transform: rotate(-135deg) scale(1);
     animation: lineRotateCCW 2s linear;
   }
 
-  .circleRotateCW {
+  .circleRotateLeft {
     transform: rotate(135deg);
     animation: circleRotateCW 2s linear;
   }

@@ -11,14 +11,14 @@ const FlawedGreyCircleRight = (props) => {
       >
         <div
           className={
-            styles.lineRotateCW +
+            styles.lineRotateRight +
             " absolute flex w-36 origin-right items-center justify-start border-y-4 border-dashed border-white sm:w-56"
           }
         >
           <div className="flex items-center justify-center">
             <div
               className={
-                styles.circleRotateCCW +
+                styles.circleRotateRight +
                 " absolute flex h-56 w-56 items-center justify-center rounded-full bg-lightgray p-10 text-center text-xs text-white sm:h-64 sm:w-64 sm:text-sm"
               }
             >

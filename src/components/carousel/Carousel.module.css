@@ -5,6 +5,20 @@
 }
 @keyframes rollIn {
   0% {
+    transform: translateX(-640px) rotate(-360deg);
+    opacity: 0;
+  }
+  1% {
+    transform: translateX(-640px) rotate(-360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rollInSm {
+  0% {
     transform: translateX(-1000px) rotate(-360deg);
     opacity: 0;
   }
@@ -19,11 +33,25 @@
 }
 
 .rollOut {
-  transform: translateX(1000px);
+  transform: translateX(640px);
   opacity: 0;
   animation: rollOut 1s linear;
 }
 @keyframes rollOut {
+  0% {
+    transform: translateX(0px) rotate(-360deg);
+    opacity: 1;
+  }
+  99% {
+    transform: translateX(640px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(640px) rotate(0deg);
+    opacity: 0;
+  }
+}
+@keyframes rollOutSm {
   0% {
     transform: translateX(0px) rotate(-360deg);
     opacity: 1;
@@ -69,11 +97,12 @@
   }
 }
 
-.lineRotateIn {
+.lineRotate1And2,
+.lineRotate3And4 {
   transform: rotate(-90deg) scale(1);
-  animation: lineRotateIn 3s linear;
+  animation: lineRotate 3s linear;
 }
-@keyframes lineRotateIn {
+@keyframes lineRotate {
   0% {
     transform: rotate(0deg) scale(0);
   }
@@ -84,7 +113,7 @@
     transform: rotate(-90deg) scale(1);
   }
 }
-@keyframes lineRotateInSm {
+@keyframes lineRotateSm {
   0% {
     transform: rotate(0deg) scale(0);
   }
@@ -95,7 +124,7 @@
     transform: rotate(105deg) scale(1);
   }
 }
-@keyframes lineRotateInLg {
+@keyframes lineRotate1And2Lg {
   0% {
     transform: rotate(0deg) scale(0);
   }
@@ -106,12 +135,24 @@
     transform: rotate(120deg) scale(1);
   }
 }
-
-.circleRotateIn {
-  transform: rotate(90deg);
-  animation: circleRotateIn 3s linear;
+@keyframes lineRotate3And4Lg {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  67% {
+    transform: rotate(0deg) scale(0);
+  }
+  100% {
+    transform: rotate(-120deg) scale(1);
+  }
 }
-@keyframes circleRotateIn {
+
+.circleRotate1And2,
+.circleRotate3And4 {
+  transform: rotate(90deg);
+  animation: circleRotate 3s linear;
+}
+@keyframes circleRotate {
   0% {
     transform: rotate(0deg);
   }
@@ -122,7 +163,7 @@
     transform: rotate(90deg);
   }
 }
-@keyframes circleRotateInSm {
+@keyframes circleRotateSm {
   0% {
     transform: rotate(0deg);
   }
@@ -133,7 +174,7 @@
     transform: rotate(-105deg);
   }
 }
-@keyframes circleRotateInLg {
+@keyframes circleRotate1And2Lg {
   0% {
     transform: rotate(0deg);
   }
@@ -142,29 +183,64 @@
   }
   100% {
     transform: rotate(-120deg);
+  }
+}
+@keyframes circleRotate3And4Lg {
+  0% {
+    transform: rotate(0deg);
+  }
+  67% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(120deg);
   }
 }
 
 @media (min-width: 640px) {
-  .lineRotateIn {
-    transform: rotate(105deg) scale(1);
-    animation: lineRotateInSm 3s linear;
+  .rollIn {
+    transform: translateX(0px);
+    opacity: 1;
+    animation: rollInSm 1s linear;
   }
 
-  .circleRotateIn {
+  .rollOut {
+    transform: translateX(1000px);
+    opacity: 0;
+    animation: rollOutSm 1s linear;
+  }
+
+  .lineRotate1And2,
+  .lineRotate3And4 {
+    transform: rotate(105deg) scale(1);
+    animation: lineRotateSm 3s linear;
+  }
+
+  .circleRotate1And2,
+  .circleRotate3And4 {
     transform: rotate(-105deg);
-    animation: circleRotateInSm 3s linear;
+    animation: circleRotateSm 3s linear;
   }
 }
 
 @media (min-width: 1024px) {
-  .lineRotateIn {
+  .lineRotate1And2 {
     transform: rotate(120deg) scale(1);
-    animation: lineRotateInLg 3s linear;
+    animation: lineRotate1And2Lg 3s linear;
   }
 
-  .circleRotateIn {
+  .lineRotate3And4 {
+    transform: rotate(-120deg) scale(1);
+    animation: lineRotate3And4Lg 3s linear;
+  }
+
+  .circleRotate1And2 {
     transform: rotate(-120deg);
-    animation: circleRotateInLg 3s linear;
+    animation: circleRotate1And2Lg 3s linear;
+  }
+
+  .circleRotate3And4 {
+    transform: rotate(120deg);
+    animation: circleRotate3And4Lg 3s linear;
   }
 }
