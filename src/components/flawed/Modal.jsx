@@ -2,13 +2,13 @@ import ReactDOM from "react-dom";
 
 const OverLay = (props) => {
   return (
-    <section className="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center backdrop-blur-3xl">
+    <section
+      className="fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center backdrop-blur-3xl"
+      onClick={() => props.setShowModal(false)}
+    >
       <div className="max-w-96 bg-darkgray p-2">
         <div className="flex items-center justify-end">
-          <button
-            className="text-4xl text-white hover:cursor-pointer"
-            onClick={() => props.setShowModal(false)}
-          >
+          <button className="text-4xl text-white hover:cursor-pointer">
             X
           </button>
         </div>
