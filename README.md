@@ -1,5 +1,7 @@
 # Mercedes
 
+Built with React and Tailwind CSS.
+
 ### To Run Locally
 
 1. Open terminal and clone the repository:
@@ -14,7 +16,7 @@
    cd mercedes
    ```
 
-3. Install the necessary dependencies:
+3. Install the dependencies:
 
    ```
    npm install
