@@ -13,7 +13,7 @@ const TimeToDance = () => {
         progressBarRef.current
       ) {
         let progress =
-          (window.innerHeight / 2 -
+          (window.innerHeight / 4 -
             startRef.current.getBoundingClientRect().top) /
           startRef.current.offsetHeight;
         if (progress < 0) {
@@ -41,7 +41,10 @@ const TimeToDance = () => {
 
   return (
     <section className="bg-darkgray pt-24 sm:pt-16 lg:pt-32">
-      <div className="mx-auto max-w-6xl" ref={startRef}>
+      <div
+        className="mx-auto -mb-[350px] max-w-6xl sm:-mb-[650px] lg:-mb-[500px]"
+        ref={startRef}
+      >
         <h2 className="mb-10 px-16 text-3xl font-bold text-lightyellow sm:px-24 sm:text-4xl lg:mb-16 lg:px-32">
           TIME TO DANCE
         </h2>
@@ -58,33 +61,33 @@ const TimeToDance = () => {
             tell that an eight-cylinder was just fired up. There's no mistaking
             this for any other type of engine.
           </p>
-          <p className="mb-10">
+          <p className="mb-0 sm:mb-10">
             The 4.0-litre unit kicks out 476bhp and 700Nm of torque, the latter
             figure from just 2,250rpm. Power is transferred to both axles
             through the 4Matic+ system with fully variable torque distribution,
             making this the first all-wheel drive SL.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             The most ideal mode for the SL55 is Individual, so you can customise
             attributes such as the engine, dampers, traction control, and
             exhaust. Setting the first two to "Sport" and the other two to
             "Advanced" and "Powerful" is about right. I also left the nine-speed
             automatic gearbox in manual mode.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             Right off the bat, the V8 eagerly shows how tractable and rev-happy
             it is. The engine, along with the exhaust, sounds glorious in second
             gear as the tachometer needle swings towards 7,000rpm. It gets real
             addictive real quick.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             The SL might be a sleek grand tourer, but it sounds like an American
             muscle car when driven hard. Emission regulations are calling for
             the internal combustion engine to be phased out, but this V8 is
             giving them two middle fingers while yelling back, 'Hell no, I won't
             go!'
           </p>
-          <p>
+          <p className="hidden sm:block">
             Even while idling, the V8's pulsing is palpable. Depending how you
             flex your right foot, the exhaust will blare anything from low and
             throaty notes to a full-on throat-clearing roar. Conducting this
@@ -112,31 +115,31 @@ const TimeToDance = () => {
             forget about the outside world. Savouring the car's soul-stirring
             abilities are more important than meetings and deadlines.
           </p>
-          <p className="mb-10">
+          <p className="mb-0 sm:mb-10">
             Show the SL a series of corners and it obliges your whims, with the
             steering wheel unexpectedly feeding back road undulations. The car's
             movements are progressive and natural. The ride, even in Sport, is
             pliant, yet accords enough body control on twistier paths.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             And when it comes to stopping, those dinner plate-size brake rotors
             give you plenty of confidence. The SL weighs nearly two tonnes, but
             it doesn't feel like it. Only when parking does the car annoy me.
             Rear-wheel steering is standard, but given the wide turning circle,
             I swear it doesn't work.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             The SL has nine speeds, but I only use four of them, as the motor's
             vocals at high rpms are addictive. Thus, with engine speeds
             remaining relatively high, a litre of unleaded allows me to cover
             just over two kilometres. Oops.
           </p>
-          <p className="mb-10">
+          <p className="mb-10 hidden sm:block">
             After two decades, the SL has reverted to a fabric roof as it is
             lighter and takes up less boot space when opened. It can be opened
             and closed in 15 seconds while the car is driven at up to 60km/h.
           </p>
-          <p>
+          <p className="hidden sm:block">
             However, 15 seconds is only possible if the virtual toggle switch
             doesn't slip away from your finger. I often found myself having to
             re-swipe to operate the roof. Mercedes should have kept the metal
@@ -146,7 +149,7 @@ const TimeToDance = () => {
         </div>
       </div>
 
-      <div className="sticky bottom-0 mb-0 mt-14 flex items-center justify-start sm:mb-14 sm:mt-14 lg:mb-20 lg:mt-20">
+      <div className="sticky bottom-0 mb-0 mt-[406px] flex items-center justify-start sm:mb-14 sm:mt-[706px] lg:mb-20 lg:mt-[580px]">
         <div className="absolute" ref={progressBarRef}>
           <div className="h-1 bg-lightgray opacity-40"></div>
           <div className="h-2"></div>
