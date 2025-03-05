@@ -51,5 +51,5 @@
 }
 
 body {
-  @apply font-visby overflow-x-hidden;
+  @apply font-visby;
 }

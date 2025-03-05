@@ -6,7 +6,7 @@ import FlawedRectangleRight from "./FlawedRectangleRight.jsx";
 
 const Flawed = () => {
   return (
-    <section className="relative bg-neutral-200 pt-24 sm:pt-48">
+    <section className="relative overflow-hidden bg-neutral-200 sm:overflow-visible sm:pt-48">
       <div className="hidden sm:block">
         <CommonTitle2 content="The SL55 is not perfect. Its ergonomics could be better, its rear-wheel steering system further improved, and the boot should be bigger." />
       </div>
@@ -15,7 +15,7 @@ const Flawed = () => {
         <CommonTitle1 content="Flawed, yet inforgettable" />
       </div>
 
-      <div className="mx-auto hidden max-w-6xl pb-20 sm:block sm:pb-44 xl:pb-48">
+      <div className="mx-auto hidden max-w-6xl sm:block">
         <div className="px-32 font-semibold text-darkbrown">
           <p className="mb-5">
             The SL55 is not perfect. Its ergonomics could be better, its
@@ -50,9 +50,11 @@ const Flawed = () => {
         </div>
       </div>
 
-      <FlawedImageContainer />
+      <div className="overflow-hidden pb-6 pt-24 sm:pb-44 sm:pt-44 xl:pb-28 xl:pt-48">
+        <FlawedImageContainer />
+      </div>
 
-      <div className="mt-6 grid grid-cols-1 sm:mt-44 xl:mt-28 xl:grid-cols-2">
+      <div className="grid grid-cols-1 overflow-hidden xl:grid-cols-2">
         <div className="flex items-center justify-start pr-3">
           <FlawedRectangleLeft />
         </div>

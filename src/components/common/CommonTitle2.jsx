@@ -35,15 +35,17 @@ const CommonTitle2 = (props) => {
   }, []);
 
   return (
-    <h6
-      className={
-        styles.title2shape +
-        " absolute -top-10 right-0 w-[102%] bg-lightyellow/90 pb-8 pl-24 pr-3 pt-20 text-left font-semibold text-darkbrown sm:w-[88%] sm:pl-40 lg:w-[72%]"
-      }
-      ref={triggerRef}
-    >
-      <div className="max-w-4xl">{props.content}</div>
-    </h6>
+    <div className="absolute top-0 h-screen w-full overflow-hidden">
+      <h6
+        className={
+          styles.title2shape +
+          " absolute -top-10 right-0 w-[102%] bg-lightyellow/90 pb-8 pl-24 pr-3 pt-20 text-left font-semibold text-darkbrown sm:w-[88%] sm:pl-40 lg:w-[72%]"
+        }
+        ref={triggerRef}
+      >
+        <div className="max-w-4xl">{props.content}</div>
+      </h6>
+    </div>
   );
 };
 

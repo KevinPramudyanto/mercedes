@@ -151,7 +151,7 @@ const TimeToDance = () => {
         </div>
       </div>
 
-      <div className="sticky bottom-0 mb-0 mt-[406px] flex items-center justify-start sm:mb-14 sm:mt-[706px] lg:mb-20 lg:mt-[580px]">
+      <div className="sticky bottom-0 mb-0 mt-[406px] flex items-center justify-start overflow-hidden sm:mb-14 sm:mt-[706px] lg:mb-20 lg:mt-[580px]">
         <div className="absolute" ref={progressBarRef}>
           <div className="h-1 bg-lightgray opacity-40"></div>
           <div className="h-2"></div>

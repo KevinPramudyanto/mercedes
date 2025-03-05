@@ -25,7 +25,7 @@ const InteriorContent = (props) => {
   }, []);
 
   return (
-    <div className="relative h-screen" ref={animateTriggerRef}>
+    <div className="relative h-screen overflow-hidden" ref={animateTriggerRef}>
       <div className="mx-auto max-w-7xl">
         <div className="mx-6 bg-black/80 px-8 py-8 text-sm text-white sm:mx-8 sm:px-10 sm:py-10 sm:text-base lg:mx-20 lg:px-16 lg:py-16">
           <p className="mb-5 sm:mb-8">{props.content1}</p>
